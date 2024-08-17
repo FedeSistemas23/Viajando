@@ -54,7 +54,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(176, 65);
+            this.label1.Location = new System.Drawing.Point(298, 65);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(423, 49);
@@ -84,7 +84,7 @@
             this.btnCambiar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCambiar.ForeColor = System.Drawing.Color.White;
             this.btnCambiar.Location = new System.Drawing.Point(176, 725);
-            this.btnCambiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCambiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCambiar.Name = "btnCambiar";
             this.btnCambiar.Size = new System.Drawing.Size(545, 49);
             this.btnCambiar.TabIndex = 26;
@@ -99,7 +99,7 @@
             this.txtPass.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Black;
             this.txtPass.Location = new System.Drawing.Point(176, 276);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Margin = new System.Windows.Forms.Padding(4);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(545, 30);
             this.txtPass.TabIndex = 27;
@@ -112,7 +112,7 @@
             this.txtRepetir.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRepetir.ForeColor = System.Drawing.Color.Black;
             this.txtRepetir.Location = new System.Drawing.Point(176, 357);
-            this.txtRepetir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtRepetir.Margin = new System.Windows.Forms.Padding(4);
             this.txtRepetir.Name = "txtRepetir";
             this.txtRepetir.Size = new System.Drawing.Size(545, 30);
             this.txtRepetir.TabIndex = 28;
@@ -148,7 +148,7 @@
             this.ckbMinimo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbMinimo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ckbMinimo.Location = new System.Drawing.Point(180, 402);
-            this.ckbMinimo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbMinimo.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMinimo.Name = "ckbMinimo";
             this.ckbMinimo.Size = new System.Drawing.Size(231, 27);
             this.ckbMinimo.TabIndex = 31;
@@ -161,11 +161,11 @@
             this.ckbMinuscula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbMinuscula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ckbMinuscula.Location = new System.Drawing.Point(180, 442);
-            this.ckbMinuscula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbMinuscula.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMinuscula.Name = "ckbMinuscula";
             this.ckbMinuscula.Size = new System.Drawing.Size(322, 27);
             this.ckbMinuscula.TabIndex = 32;
-            this.ckbMinuscula.Text = "Al menos una letra minuscula";
+            this.ckbMinuscula.Text = "Al menos una letra minúscula";
             this.ckbMinuscula.UseVisualStyleBackColor = true;
             // 
             // ckbMayuscula
@@ -174,7 +174,7 @@
             this.ckbMayuscula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbMayuscula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ckbMayuscula.Location = new System.Drawing.Point(180, 481);
-            this.ckbMayuscula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbMayuscula.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMayuscula.Name = "ckbMayuscula";
             this.ckbMayuscula.Size = new System.Drawing.Size(332, 27);
             this.ckbMayuscula.TabIndex = 33;
@@ -187,7 +187,7 @@
             this.ckbNumero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbNumero.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ckbNumero.Location = new System.Drawing.Point(180, 521);
-            this.ckbNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbNumero.Margin = new System.Windows.Forms.Padding(4);
             this.ckbNumero.Name = "ckbNumero";
             this.ckbNumero.Size = new System.Drawing.Size(234, 27);
             this.ckbNumero.TabIndex = 34;
@@ -200,7 +200,7 @@
             this.ckbEspecial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ckbEspecial.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.ckbEspecial.Location = new System.Drawing.Point(180, 561);
-            this.ckbEspecial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbEspecial.Margin = new System.Windows.Forms.Padding(4);
             this.ckbEspecial.Name = "ckbEspecial";
             this.ckbEspecial.Size = new System.Drawing.Size(334, 27);
             this.ckbEspecial.TabIndex = 35;
@@ -210,7 +210,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(177, 633);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 21);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -236,7 +236,7 @@
             // 
             this.btnCerrar.ErrorImage = null;
             this.btnCerrar.Location = new System.Drawing.Point(829, 15);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(24, 22);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,7 +251,7 @@
             this.txtPasswordAnterior.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPasswordAnterior.ForeColor = System.Drawing.Color.Black;
             this.txtPasswordAnterior.Location = new System.Drawing.Point(176, 201);
-            this.txtPasswordAnterior.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPasswordAnterior.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasswordAnterior.Name = "txtPasswordAnterior";
             this.txtPasswordAnterior.Size = new System.Drawing.Size(545, 30);
             this.txtPasswordAnterior.TabIndex = 25;
@@ -280,7 +280,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmEditarPassword";
             this.Opacity = 0.9D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
