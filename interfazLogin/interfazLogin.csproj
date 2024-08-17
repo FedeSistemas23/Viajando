@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E6C6CA8-B346-4EF2-BC9D-231952468448}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>interfazLogin</RootNamespace>
+    <AssemblyName>interfazLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmEditarPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarPassword.Designer.cs">
+      <DependentUpon>FrmEditarPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPreguntasSeguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPreguntasSeguridad.Designer.cs">
+      <DependentUpon>FrmPreguntasSeguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\FrmLogin1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\FrmLogin1.Designer.cs">
+      <DependentUpon>FrmLogin1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\bienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\bienvenida.Designer.cs">
+      <DependentUpon>bienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrimerIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrimerIngreso.Designer.cs">
+      <DependentUpon>FrmPrimerIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="login\FrmLogin1.resx">
+      <DependentUpon>FrmLogin1.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FrmEditarPassword.resx">
+      <DependentUpon>FrmEditarPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPreguntasSeguridad.resx">
+      <DependentUpon>FrmPreguntasSeguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\bienvenida.resx">
+      <DependentUpon>bienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrimerIngreso.resx">
+      <DependentUpon>FrmPrimerIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize_5800748.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-button_11419680.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letra-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flight-route_1585600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{c07257ef-8cbb-4ce2-acc2-41ce5e7c245d}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaServicios\CapaServicios.csproj">
+      <Project>{c72a4ff7-2b28-495b-bf95-b57f91584e1d}</Project>
+      <Name>CapaServicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaSesion\CapaSesion.csproj">
+      <Project>{e92b32cb-b1a4-43ad-b822-a31029907231}</Project>
+      <Name>CapaSesion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\interfazPpal\interfazPpal.csproj">
+      <Project>{ef3eabf5-db0c-4abb-a404-09f4d4746500}</Project>
+      <Name>interfazPpal</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signo-de-exclamacion.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\people-2591874_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people-2591874_640.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
