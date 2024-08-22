@@ -79,6 +79,9 @@
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.datosPersonalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLogout = new System.Windows.Forms.PictureBox();
+            this.pagosAProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagosAVendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagosRecibidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuContenedor.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -192,6 +195,10 @@
             // 
             // pagosToolStripMenuItem
             // 
+            this.pagosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pagosAProveedoresToolStripMenuItem,
+            this.pagosAVendedoresToolStripMenuItem,
+            this.pagosRecibidosToolStripMenuItem});
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
             this.pagosToolStripMenuItem.Size = new System.Drawing.Size(62, 27);
             this.pagosToolStripMenuItem.Text = "Pagos";
@@ -472,7 +479,25 @@
             this.btnLogout.TabIndex = 2;
             this.btnLogout.TabStop = false;
             // 
-            // Menu
+            // pagosAProveedoresToolStripMenuItem
+            // 
+            this.pagosAProveedoresToolStripMenuItem.Name = "pagosAProveedoresToolStripMenuItem";
+            this.pagosAProveedoresToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.pagosAProveedoresToolStripMenuItem.Text = "Pagos a Proveedores";
+            // 
+            // pagosAVendedoresToolStripMenuItem
+            // 
+            this.pagosAVendedoresToolStripMenuItem.Name = "pagosAVendedoresToolStripMenuItem";
+            this.pagosAVendedoresToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.pagosAVendedoresToolStripMenuItem.Text = "Pagos a Vendedores";
+            // 
+            // pagosRecibidosToolStripMenuItem
+            // 
+            this.pagosRecibidosToolStripMenuItem.Name = "pagosRecibidosToolStripMenuItem";
+            this.pagosRecibidosToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.pagosRecibidosToolStripMenuItem.Text = "Pagos Recibidos";
+            // 
+            // MenuPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -483,7 +508,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Menu";
+            this.Name = "MenuPpal";
             this.Text = "Sistema de Reservas Viajando";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -549,5 +574,8 @@
         private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pasajerosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem pagosAProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagosAVendedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagosRecibidosToolStripMenuItem;
     }
 }

@@ -82,12 +82,6 @@
     <Compile Include="MenuPpal.Designer.cs">
       <DependentUpon>MenuPpal.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConfiguracionDeSeguridad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,9 +131,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPpal.resx">
       <DependentUpon>MenuPpal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfiguracionDeSeguridad.resx">
       <DependentUpon>ConfiguracionDeSeguridad.cs</DependentUpon>
