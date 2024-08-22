@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Loggin
 {
-    public partial class Menu : Form
+    public partial class MenuPpal : Form
     {
-        public Menu()
+        public MenuPpal()
         {
             InitializeComponent();
         }

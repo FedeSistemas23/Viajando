@@ -16,11 +16,13 @@ using interfazPpal;
 using CapaSesion;
 using System.Diagnostics.Eventing.Reader;
 using interfazLogin;
+using Loggin;
 
 namespace interfazLogin
 {
     public partial class FrmLogin1 : Form
     {
+        MenuPpal menu = new MenuPpal();
         CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();        
         CN_ValidarUsuario validarusuario = new CN_ValidarUsuario();
         CN_Usuario usuario = new CN_Usuario();
@@ -97,7 +99,7 @@ namespace interfazLogin
          Validar que las letras sean minusculas
         // no esta discriminando de mayusculas y minusculas         
          */
-        interfazPpal.MenuPrincipal menu = new interfazPpal.MenuPrincipal();
+       
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -108,7 +110,7 @@ namespace interfazLogin
             string password = txtPass.Text;
             string userpass = username + password;
             string hasheo2 = Seguridad.SHA256(userpass);
-            MenuPrincipal menu = new MenuPrincipal();
+            
             if (txtUsuario.Text != "Ej.: ejemplo@gmail.com")
             {
                 if (txtPass.Text != "Contraseña")

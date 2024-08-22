@@ -1,6 +1,6 @@
 ﻿namespace Loggin
 {
-    partial class Menu
+    partial class MenuPpal
     {
         /// <summary>
         /// Required designer variable.

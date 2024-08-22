@@ -154,7 +154,6 @@
             this.ckbMinimo.TabIndex = 31;
             this.ckbMinimo.Text = "Mínimo 8 caracteres";
             this.ckbMinimo.UseVisualStyleBackColor = true;
-            this.ckbMinimo.CheckedChanged += new System.EventHandler(this.ckbMinimo_CheckedChanged);
             // 
             // ckbMinuscula
             // 
