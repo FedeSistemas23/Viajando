@@ -73,7 +73,7 @@ namespace interfazPpal
                 {
                     ckbMinimo.Checked = true;
                 }
-                else if (char.IsSymbol(password[i]) || char.IsSeparator(password[i]) || char.i(password[i]))
+                else if (char.IsSymbol(password[i]) || char.IsSeparator(password[i]) || char.IsPunctuation(password[i]))
                 {
                     ckbEspecial.Checked = true;
                 }
