@@ -46,6 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alta de Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alta de Usuarios.Designer.cs">
+      <DependentUpon>Alta de Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarReserva.Designer.cs">
+      <DependentUpon>BuscarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearPaquete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearPaquete.Designer.cs">
+      <DependentUpon>CrearPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearReserva.Designer.cs">
+      <DependentUpon>CrearReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Disponibilidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Disponibilidad.Designer.cs">
+      <DependentUpon>Disponibilidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +100,12 @@
     <Compile Include="GestionAdministratioContable.Designer.cs">
       <DependentUpon>GestionAdministratioContable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Preguntas_Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preguntas_Seguridad.Designer.cs">
+      <DependentUpon>Preguntas_Seguridad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GestionDeReservas.cs">
@@ -78,6 +120,24 @@
     <Compile Include="Usuario.Designer.cs">
       <DependentUpon>Usuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Alta de Usuarios.resx">
+      <DependentUpon>Alta de Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarReserva.resx">
+      <DependentUpon>BuscarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearPaquete.resx">
+      <DependentUpon>CrearPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearReserva.resx">
+      <DependentUpon>CrearReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Disponibilidad.resx">
+      <DependentUpon>Disponibilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GestionAdministratioContable.resx">
       <DependentUpon>GestionAdministratioContable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preguntas_Seguridad.resx">
+      <DependentUpon>Preguntas_Seguridad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -75,6 +75,7 @@ namespace interfazLogin
             {
 
                 string aleatorio = Aleatorios.Armar();
+                CS_Usuario.password = aleatorio;
                 ArmarMail.Preparar(CS_Usuario.Username, CS_Usuario.email, aleatorio);
                 string concatenacion = CS_Usuario.Username + aleatorio;
                 string hasheo2 = Seguridad.SHA256(concatenacion);
