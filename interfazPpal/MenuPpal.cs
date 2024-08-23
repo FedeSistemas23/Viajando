@@ -1,4 +1,5 @@
-﻿using System;
+﻿using interfazPpal;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Loggin
 {
-    public partial class Menu : Form
+    public partial class MenuPpal : Form
     {
-        public Menu()
+        public MenuPpal()
         {
             InitializeComponent();
         }
@@ -97,6 +98,18 @@ namespace Loggin
         private void resultadosComercialesToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ingresarEditarPagosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPagoProveedores pagoProveedores = new FrmPagoProveedores();
+            pagoProveedores.Show();
+        }
+
+        private void pagoAVendedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPagoVendedor pagoVendedor= new FrmPagoVendedor();
+            pagoVendedor.Show();
         }
     }
 }

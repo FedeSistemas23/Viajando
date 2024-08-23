@@ -16,11 +16,13 @@ using interfazPpal;
 using CapaSesion;
 using System.Diagnostics.Eventing.Reader;
 using interfazLogin;
+using Loggin;
 
 namespace interfazLogin
 {
     public partial class FrmLogin1 : Form
     {
+        MenuPpal menu1 = new MenuPpal();
         CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();        
         CN_ValidarUsuario validarusuario = new CN_ValidarUsuario();
         CN_Usuario usuario = new CN_Usuario();
@@ -97,7 +99,7 @@ namespace interfazLogin
          Validar que las letras sean minusculas
         // no esta discriminando de mayusculas y minusculas         
          */
-        interfazPpal.MenuPrincipal menu = new interfazPpal.MenuPrincipal();
+        interfazPpal.Menu menu = new interfazPpal.Menu();
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
@@ -108,7 +110,8 @@ namespace interfazLogin
             string password = txtPass.Text;
             string userpass = username + password;
             string hasheo2 = Seguridad.SHA256(userpass);
-            MenuPrincipal menu = new MenuPrincipal();
+            interfazPpal.Menu menu = new interfazPpal.Menu();
+            
             if (txtUsuario.Text != "Ej.: ejemplo@gmail.com")
             {
                 if (txtPass.Text != "Contraseña")
@@ -128,11 +131,11 @@ namespace interfazLogin
                                 this.Hide();
                                 bienvenida saludo = new bienvenida();
                                 saludo.ShowDialog();
-                                menu.Show();
+                                menu1.Show();
                             }
                         }
                         //else if (frm1.aleatorio == txtPass.Text)
-                        {
+                        /*{
                             MessageBox.Show("La contraseña es incorrecta. Ingrese de nuevo la contraseña:");
                             txtPass.Focus();
                             int intentos = CS_Usuario.intentos++;
@@ -141,7 +144,7 @@ namespace interfazLogin
                             {
                                 MessageBox.Show("El usuario ha sido bloqueado");
                             }
-                        }
+                        }*/
                     }
                     else
                     {

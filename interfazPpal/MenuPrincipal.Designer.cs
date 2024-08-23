@@ -1,6 +1,6 @@
 ﻿namespace interfazPpal
 {
-    partial class MenuPrincipal
+    partial class Menu
     {
         /// <summary>
         /// Variable del diseñador necesaria.

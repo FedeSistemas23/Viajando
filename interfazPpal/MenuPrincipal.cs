@@ -16,9 +16,9 @@ using CapaSesion;
 
 namespace interfazPpal
 {
-    public partial class MenuPrincipal : Form
+    public partial class Menu : Form
     {
-        public MenuPrincipal()
+        public Menu()
         {
             InitializeComponent();
         }

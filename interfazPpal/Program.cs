@@ -16,7 +16,7 @@ namespace interfazPpal
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuPrincipal());
+            Application.Run(new Menu());
         }
     }
 }
