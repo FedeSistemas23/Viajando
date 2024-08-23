@@ -144,7 +144,7 @@
             this.lnkOlvidar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lnkOlvidar.Name = "lnkOlvidar";
             this.lnkOlvidar.Size = new System.Drawing.Size(199, 21);
-            this.lnkOlvidar.TabIndex = 0;
+            this.lnkOlvidar.TabIndex = 4;
             this.lnkOlvidar.TabStop = true;
             this.lnkOlvidar.Text = "Olvide mi contraseña?";
             this.lnkOlvidar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkOlvidar_LinkClicked_1);
@@ -213,6 +213,7 @@
             // 
             // FrmLogin1
             // 
+            this.AcceptButton = this.btnIngresar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
