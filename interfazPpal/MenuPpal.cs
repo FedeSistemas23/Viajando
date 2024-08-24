@@ -1,13 +1,5 @@
 ﻿using interfazPpal;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Loggin
@@ -17,6 +9,7 @@ namespace Loggin
         public MenuPpal()
         {
             InitializeComponent();
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -37,7 +30,7 @@ namespace Loggin
         private void AbrirFormuEnPanelMenu(object formHijo)
         {
             if (this.menuContenedor.Controls.Count > 0)
-            
+
                 this.menuContenedor.Controls.RemoveAt(0);
             Form form = formHijo as Form;
             form.TopLevel = false;
@@ -51,7 +44,7 @@ namespace Loggin
             Alta_de_Usuarios formAlta = new Alta_de_Usuarios();
 
             AbrirFormuEnPanelMenu(formAlta);
-            
+
             //Alta_de_Usuarios frm = new Alta_de_Usuarios();
             //nuContenedor.Show();
         }
@@ -60,8 +53,8 @@ namespace Loggin
         {
             Preguntas_Seguridad frm = new Preguntas_Seguridad();
             AbrirFormuEnPanelMenu(frm);
-            
-            
+
+
         }
 
         private void menuContenedor_Paint(object sender, PaintEventArgs e)
@@ -80,7 +73,7 @@ namespace Loggin
             BuscarReserva frm = new BuscarReserva();
             AbrirFormuEnPanelMenu(frm);
 
-            
+
         }
 
         private void crearNuevoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -100,16 +93,51 @@ namespace Loggin
 
         }
 
-        private void ingresarEditarPagosToolStripMenuItem_Click(object sender, EventArgs e)
+        private void pagoAVendedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPagoProveedores pagoProveedores = new FrmPagoProveedores();
+            FrmPagoVendedor pagoVendedor = new FrmPagoVendedor();
+            pagoVendedor.Show();
+        }
+
+        private void darDeBajaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIngresarEditarVendedor vendedor = new FrmIngresarEditarVendedor(0);
+            vendedor.Show();
+        }
+
+        private void ingresarEditarPagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(0);
+            pagoRecibidos.Show();
+        }
+
+        private void eliminarPagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1, 1);
+            pagoRecibidos.Show();
+        }
+
+        private void buscarPagoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ingresarEditarPagoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmPagoProveedores pagoProveedores = new FrmPagoProveedores(0);
             pagoProveedores.Show();
         }
 
-        private void pagoAVendedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        private void eliminarPagoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmPagoVendedor pagoVendedor= new FrmPagoVendedor();
-            pagoVendedor.Show();
+            FrmPagoProveedores pagoProveedores = new FrmPagoProveedores(0,1);
+            pagoProveedores.Show();
+        }
+
+        private void pagosToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(0);
+            pagoRecibidos.Show();
         }
     }
 }

@@ -76,11 +76,23 @@
     <Compile Include="Disponibilidad.Designer.cs">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIngresarEditarVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresarEditarVendedor.Designer.cs">
+      <DependentUpon>FrmIngresarEditarVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPagoProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPagoProveedores.Designer.cs">
       <DependentUpon>FrmPagoProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPagoRecibidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPagoRecibidos.Designer.cs">
+      <DependentUpon>FrmPagoRecibidos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPagoVendedor.cs">
       <SubType>Form</SubType>
@@ -147,8 +159,14 @@
     <EmbeddedResource Include="Disponibilidad.resx">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarEditarVendedor.resx">
+      <DependentUpon>FrmIngresarEditarVendedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPagoProveedores.resx">
       <DependentUpon>FrmPagoProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPagoRecibidos.resx">
+      <DependentUpon>FrmPagoRecibidos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPagoVendedor.resx">
       <DependentUpon>FrmPagoVendedor.cs</DependentUpon>

@@ -12,9 +12,25 @@ namespace interfazPpal
 {
     public partial class FrmPagoProveedores : Form
     {
-        public FrmPagoProveedores()
+        public FrmPagoProveedores(int a)
         {
             InitializeComponent();
+            if (a == 0)
+            {
+                btnEliminar.Enabled = false;
+
+            }
+            
+        }
+        public FrmPagoProveedores(int a, int b)
+        {
+            InitializeComponent();
+            if (a == 0 && b==1)
+            {
+                btnGuardar.Enabled = false;
+                btnEditar.Enabled = false;
+            }
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -33,6 +49,11 @@ namespace interfazPpal
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

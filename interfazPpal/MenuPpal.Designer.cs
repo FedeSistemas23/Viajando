@@ -42,10 +42,16 @@
             this.pagosToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.pasajerosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagoAProveedorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarEditarPagoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarPagoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagoAVendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarEditarPagoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagosRecibidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarEditarPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarPagoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.darDeBajaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.coordinadoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gestiónProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +66,12 @@
             this.vendedoresToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.coordinadoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deHotelesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deBusesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagosToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagoAProveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagoAVendedoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pagosRecibidosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.informesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reservasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paquetesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,10 +90,8 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.datosPersonalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarEditarPagosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pagoAVendedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pagosRecibidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnLogout = new System.Windows.Forms.PictureBox();
+            this.eliminarPagoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.menuContenedor.SuspendLayout();
             this.contextMenuStrip2.SuspendLayout();
@@ -184,8 +194,9 @@
             // pagosToolStripMenuItem2
             // 
             this.pagosToolStripMenuItem2.Name = "pagosToolStripMenuItem2";
-            this.pagosToolStripMenuItem2.Size = new System.Drawing.Size(223, 28);
+            this.pagosToolStripMenuItem2.Size = new System.Drawing.Size(224, 28);
             this.pagosToolStripMenuItem2.Text = "Pagos";
+            this.pagosToolStripMenuItem2.Click += new System.EventHandler(this.pagosToolStripMenuItem2_Click);
             // 
             // pasajerosToolStripMenuItem
             // 
@@ -196,48 +207,97 @@
             // pagosToolStripMenuItem
             // 
             this.pagosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarEditarPagosToolStripMenuItem,
+            this.pagoAProveedorToolStripMenuItem,
             this.pagoAVendedoresToolStripMenuItem,
             this.pagosRecibidosToolStripMenuItem});
             this.pagosToolStripMenuItem.Name = "pagosToolStripMenuItem";
             this.pagosToolStripMenuItem.Size = new System.Drawing.Size(62, 27);
             this.pagosToolStripMenuItem.Text = "Pagos";
             // 
+            // pagoAProveedorToolStripMenuItem
+            // 
+            this.pagoAProveedorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarEditarPagoToolStripMenuItem2,
+            this.eliminarPagoToolStripMenuItem1});
+            this.pagoAProveedorToolStripMenuItem.Name = "pagoAProveedorToolStripMenuItem";
+            this.pagoAProveedorToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pagoAProveedorToolStripMenuItem.Text = "Pago a Proveedor";
+            // 
+            // ingresarEditarPagoToolStripMenuItem2
+            // 
+            this.ingresarEditarPagoToolStripMenuItem2.Name = "ingresarEditarPagoToolStripMenuItem2";
+            this.ingresarEditarPagoToolStripMenuItem2.Size = new System.Drawing.Size(227, 26);
+            this.ingresarEditarPagoToolStripMenuItem2.Text = "Ingresar/Editar Pago";
+            this.ingresarEditarPagoToolStripMenuItem2.Click += new System.EventHandler(this.ingresarEditarPagoToolStripMenuItem2_Click);
+            // 
+            // eliminarPagoToolStripMenuItem1
+            // 
+            this.eliminarPagoToolStripMenuItem1.Name = "eliminarPagoToolStripMenuItem1";
+            this.eliminarPagoToolStripMenuItem1.Size = new System.Drawing.Size(227, 26);
+            this.eliminarPagoToolStripMenuItem1.Text = "Eliminar Pago";
+            this.eliminarPagoToolStripMenuItem1.Click += new System.EventHandler(this.eliminarPagoToolStripMenuItem1_Click);
+            // 
+            // pagoAVendedoresToolStripMenuItem
+            // 
+            this.pagoAVendedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarEditarPagoToolStripMenuItem1,
+            this.eliminarPagoToolStripMenuItem2});
+            this.pagoAVendedoresToolStripMenuItem.Name = "pagoAVendedoresToolStripMenuItem";
+            this.pagoAVendedoresToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pagoAVendedoresToolStripMenuItem.Text = "Pago a Vendedor";
+            this.pagoAVendedoresToolStripMenuItem.Click += new System.EventHandler(this.pagoAVendedoresToolStripMenuItem_Click);
+            // 
+            // ingresarEditarPagoToolStripMenuItem1
+            // 
+            this.ingresarEditarPagoToolStripMenuItem1.Name = "ingresarEditarPagoToolStripMenuItem1";
+            this.ingresarEditarPagoToolStripMenuItem1.Size = new System.Drawing.Size(227, 26);
+            this.ingresarEditarPagoToolStripMenuItem1.Text = "Ingresar/Editar Pago";
+            // 
+            // pagosRecibidosToolStripMenuItem
+            // 
+            this.pagosRecibidosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarEditarPagoToolStripMenuItem,
+            this.eliminarPagoToolStripMenuItem});
+            this.pagosRecibidosToolStripMenuItem.Name = "pagosRecibidosToolStripMenuItem";
+            this.pagosRecibidosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.pagosRecibidosToolStripMenuItem.Text = "Pagos Recibidos";
+            // 
+            // ingresarEditarPagoToolStripMenuItem
+            // 
+            this.ingresarEditarPagoToolStripMenuItem.Name = "ingresarEditarPagoToolStripMenuItem";
+            this.ingresarEditarPagoToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.ingresarEditarPagoToolStripMenuItem.Text = "Ingresar/Editar Pago";
+            this.ingresarEditarPagoToolStripMenuItem.Click += new System.EventHandler(this.ingresarEditarPagoToolStripMenuItem_Click);
+            // 
+            // eliminarPagoToolStripMenuItem
+            // 
+            this.eliminarPagoToolStripMenuItem.Name = "eliminarPagoToolStripMenuItem";
+            this.eliminarPagoToolStripMenuItem.Size = new System.Drawing.Size(227, 26);
+            this.eliminarPagoToolStripMenuItem.Text = "Eliminar Pago";
+            this.eliminarPagoToolStripMenuItem.Click += new System.EventHandler(this.eliminarPagoToolStripMenuItem_Click);
+            // 
             // vendedoresToolStripMenuItem
             // 
             this.vendedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscarToolStripMenuItem1,
             this.nuevoToolStripMenuItem1,
-            this.editarToolStripMenuItem3,
             this.darDeBajaToolStripMenuItem});
             this.vendedoresToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.vendedoresToolStripMenuItem.Name = "vendedoresToolStripMenuItem";
             this.vendedoresToolStripMenuItem.Size = new System.Drawing.Size(114, 27);
             this.vendedoresToolStripMenuItem.Text = "Vendedores";
             // 
-            // buscarToolStripMenuItem1
-            // 
-            this.buscarToolStripMenuItem1.Name = "buscarToolStripMenuItem1";
-            this.buscarToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
-            this.buscarToolStripMenuItem1.Text = "Buscar";
-            // 
             // nuevoToolStripMenuItem1
             // 
             this.nuevoToolStripMenuItem1.Name = "nuevoToolStripMenuItem1";
-            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
-            this.nuevoToolStripMenuItem1.Text = "Nuevo";
-            // 
-            // editarToolStripMenuItem3
-            // 
-            this.editarToolStripMenuItem3.Name = "editarToolStripMenuItem3";
-            this.editarToolStripMenuItem3.Size = new System.Drawing.Size(224, 28);
-            this.editarToolStripMenuItem3.Text = "Editar";
+            this.nuevoToolStripMenuItem1.Size = new System.Drawing.Size(286, 28);
+            this.nuevoToolStripMenuItem1.Text = "Ingresar/Editar Vendedor";
             // 
             // darDeBajaToolStripMenuItem
             // 
             this.darDeBajaToolStripMenuItem.Name = "darDeBajaToolStripMenuItem";
-            this.darDeBajaToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.darDeBajaToolStripMenuItem.Size = new System.Drawing.Size(286, 28);
             this.darDeBajaToolStripMenuItem.Text = "Dar de baja";
+            this.darDeBajaToolStripMenuItem.Click += new System.EventHandler(this.darDeBajaToolStripMenuItem_Click);
             // 
             // coordinadoresToolStripMenuItem
             // 
@@ -289,7 +349,8 @@
             this.pasajerToolStripMenuItem,
             this.vendedoresToolStripMenuItem2,
             this.coordinadoresToolStripMenuItem1,
-            this.proveedoresToolStripMenuItem});
+            this.proveedoresToolStripMenuItem,
+            this.pagosToolStripMenuItem3});
             this.buscarToolStripMenuItem2.Name = "buscarToolStripMenuItem2";
             this.buscarToolStripMenuItem2.Size = new System.Drawing.Size(66, 27);
             this.buscarToolStripMenuItem2.Text = "Buscar";
@@ -326,9 +387,52 @@
             // 
             // proveedoresToolStripMenuItem
             // 
+            this.proveedoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deHotelesToolStripMenuItem,
+            this.deBusesToolStripMenuItem});
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
             this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(190, 26);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            // 
+            // deHotelesToolStripMenuItem
+            // 
+            this.deHotelesToolStripMenuItem.Name = "deHotelesToolStripMenuItem";
+            this.deHotelesToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.deHotelesToolStripMenuItem.Text = "De Hoteles";
+            // 
+            // deBusesToolStripMenuItem
+            // 
+            this.deBusesToolStripMenuItem.Name = "deBusesToolStripMenuItem";
+            this.deBusesToolStripMenuItem.Size = new System.Drawing.Size(166, 26);
+            this.deBusesToolStripMenuItem.Text = "De Buses";
+            // 
+            // pagosToolStripMenuItem3
+            // 
+            this.pagosToolStripMenuItem3.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pagoAProveedoresToolStripMenuItem,
+            this.pagoAVendedoresToolStripMenuItem1,
+            this.pagosRecibidosToolStripMenuItem1});
+            this.pagosToolStripMenuItem3.Name = "pagosToolStripMenuItem3";
+            this.pagosToolStripMenuItem3.Size = new System.Drawing.Size(190, 26);
+            this.pagosToolStripMenuItem3.Text = "Pagos";
+            // 
+            // pagoAProveedoresToolStripMenuItem
+            // 
+            this.pagoAProveedoresToolStripMenuItem.Name = "pagoAProveedoresToolStripMenuItem";
+            this.pagoAProveedoresToolStripMenuItem.Size = new System.Drawing.Size(223, 26);
+            this.pagoAProveedoresToolStripMenuItem.Text = "Pago a Proveedores";
+            // 
+            // pagoAVendedoresToolStripMenuItem1
+            // 
+            this.pagoAVendedoresToolStripMenuItem1.Name = "pagoAVendedoresToolStripMenuItem1";
+            this.pagoAVendedoresToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
+            this.pagoAVendedoresToolStripMenuItem1.Text = "Pago a Vendedores";
+            // 
+            // pagosRecibidosToolStripMenuItem1
+            // 
+            this.pagosRecibidosToolStripMenuItem1.Name = "pagosRecibidosToolStripMenuItem1";
+            this.pagosRecibidosToolStripMenuItem1.Size = new System.Drawing.Size(223, 26);
+            this.pagosRecibidosToolStripMenuItem1.Text = "Pagos Recibidos";
             // 
             // informesToolStripMenuItem
             // 
@@ -469,26 +573,6 @@
             this.datosPersonalesToolStripMenuItem.Size = new System.Drawing.Size(190, 24);
             this.datosPersonalesToolStripMenuItem.Text = "Datos Personales";
             // 
-            // ingresarEditarPagosToolStripMenuItem
-            // 
-            this.ingresarEditarPagosToolStripMenuItem.Name = "ingresarEditarPagosToolStripMenuItem";
-            this.ingresarEditarPagosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.ingresarEditarPagosToolStripMenuItem.Text = "Pago a Proveedores";
-            this.ingresarEditarPagosToolStripMenuItem.Click += new System.EventHandler(this.ingresarEditarPagosToolStripMenuItem_Click);
-            // 
-            // pagoAVendedoresToolStripMenuItem
-            // 
-            this.pagoAVendedoresToolStripMenuItem.Name = "pagoAVendedoresToolStripMenuItem";
-            this.pagoAVendedoresToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.pagoAVendedoresToolStripMenuItem.Text = "Pago a Vendedores";
-            this.pagoAVendedoresToolStripMenuItem.Click += new System.EventHandler(this.pagoAVendedoresToolStripMenuItem_Click);
-            // 
-            // pagosRecibidosToolStripMenuItem
-            // 
-            this.pagosRecibidosToolStripMenuItem.Name = "pagosRecibidosToolStripMenuItem";
-            this.pagosRecibidosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.pagosRecibidosToolStripMenuItem.Text = "Pagos Recibidos";
-            // 
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(1503, 0);
@@ -499,7 +583,13 @@
             this.btnLogout.TabIndex = 2;
             this.btnLogout.TabStop = false;
             // 
-            // Menu
+            // eliminarPagoToolStripMenuItem2
+            // 
+            this.eliminarPagoToolStripMenuItem2.Name = "eliminarPagoToolStripMenuItem2";
+            this.eliminarPagoToolStripMenuItem2.Size = new System.Drawing.Size(227, 26);
+            this.eliminarPagoToolStripMenuItem2.Text = "Eliminar Pago";
+            // 
+            // MenuPpal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -510,7 +600,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Menu";
+            this.Name = "MenuPpal";
             this.Text = "Sistema de Reservas Viajando";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.menuStrip1.ResumeLayout(false);
@@ -541,9 +631,7 @@
         private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem cancelarToolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem vendedoresToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem darDeBajaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configuracionSistemaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mantenimientoToolStripMenuItem;
@@ -576,8 +664,20 @@
         private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pasajerosToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem ingresarEditarPagosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pagoAVendedoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pagosRecibidosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deHotelesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deBusesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagosToolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem pagoAProveedoresToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pagoAVendedoresToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pagosRecibidosToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ingresarEditarPagoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarPagoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresarEditarPagoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem pagoAProveedorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ingresarEditarPagoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem eliminarPagoToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem eliminarPagoToolStripMenuItem2;
     }
 }

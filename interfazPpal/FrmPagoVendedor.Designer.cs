@@ -52,6 +52,7 @@
             this.chbTransferencia = new System.Windows.Forms.CheckBox();
             this.lblMontoPagado = new System.Windows.Forms.Label();
             this.txtMontoPagado = new System.Windows.Forms.TextBox();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservasPagas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,7 +147,7 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(476, 604);
+            this.btnCancelar.Location = new System.Drawing.Point(553, 604);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 13;
@@ -155,7 +156,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(295, 604);
+            this.btnGuardar.Location = new System.Drawing.Point(216, 604);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 23);
             this.btnGuardar.TabIndex = 12;
@@ -262,6 +263,15 @@
             this.txtMontoPagado.Size = new System.Drawing.Size(156, 22);
             this.txtMontoPagado.TabIndex = 11;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.Location = new System.Drawing.Point(374, 604);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.TabIndex = 24;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            // 
             // FrmPagoVendedor
             // 
             this.AcceptButton = this.btnGuardar;
@@ -269,6 +279,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancelar;
             this.ClientSize = new System.Drawing.Size(864, 662);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtMontoPagado);
             this.Controls.Add(this.lblMontoPagado);
             this.Controls.Add(this.chbTransferencia);
@@ -327,5 +338,6 @@
         private System.Windows.Forms.CheckBox chbTransferencia;
         private System.Windows.Forms.Label lblMontoPagado;
         private System.Windows.Forms.TextBox txtMontoPagado;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
