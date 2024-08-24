@@ -139,5 +139,10 @@ namespace Loggin
             FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(0);
             pagoRecibidos.Show();
         }
+
+        private void darDeBajaCoordinadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
