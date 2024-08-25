@@ -42,13 +42,13 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.lblBuscar = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.BtnCancelar = new System.Windows.Forms.Button();
             this.btnDarDeBaja = new System.Windows.Forms.Button();
-            this.btnAceptarVendedor = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.lblObservaciones = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // lblNombre
@@ -119,8 +119,8 @@
             this.txtNombre.Location = new System.Drawing.Point(206, 71);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(272, 22);
-            this.txtNombre.TabIndex = 7;
-                // 
+            this.txtNombre.TabIndex = 2;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(206, 287);
@@ -133,109 +133,111 @@
             this.textBox2.Location = new System.Drawing.Point(206, 253);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(272, 22);
-            this.textBox2.TabIndex = 9;
+            this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(206, 222);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(272, 22);
-            this.textBox3.TabIndex = 10;
+            this.textBox3.TabIndex = 6;
             // 
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(206, 184);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(272, 22);
-            this.textBox4.TabIndex = 11;
+            this.textBox4.TabIndex = 5;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(206, 147);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(272, 22);
-            this.textBox5.TabIndex = 12;
+            this.textBox5.TabIndex = 4;
             // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(206, 110);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(272, 22);
-            this.textBox6.TabIndex = 13;
-            // 
-            // lblBuscar
-            // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.Location = new System.Drawing.Point(29, 19);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(118, 16);
-            this.lblBuscar.TabIndex = 14;
-            this.lblBuscar.Text = "Buscar Vendedor :";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(206, 19);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(272, 22);
-            this.textBox7.TabIndex = 15;
+            this.textBox6.TabIndex = 3;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(568, 45);
+            this.btnBuscar.Location = new System.Drawing.Point(285, 16);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(150, 23);
-            this.btnBuscar.TabIndex = 16;
+            this.btnBuscar.Size = new System.Drawing.Size(150, 34);
+            this.btnBuscar.TabIndex = 1;
             this.btnBuscar.Text = "Buscar Vendedor";
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(270, 365);
+            this.btnGuardar.Location = new System.Drawing.Point(137, 463);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
-            this.btnGuardar.TabIndex = 17;
+            this.btnGuardar.Size = new System.Drawing.Size(75, 42);
+            this.btnGuardar.TabIndex = 9;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(430, 365);
+            this.BtnCancelar.Location = new System.Drawing.Point(559, 463);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 23);
-            this.BtnCancelar.TabIndex = 18;
+            this.BtnCancelar.Size = new System.Drawing.Size(75, 42);
+            this.BtnCancelar.TabIndex = 12;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnDarDeBaja
             // 
-            this.btnDarDeBaja.Location = new System.Drawing.Point(593, 365);
+            this.btnDarDeBaja.Location = new System.Drawing.Point(371, 463);
             this.btnDarDeBaja.Name = "btnDarDeBaja";
-            this.btnDarDeBaja.Size = new System.Drawing.Size(125, 23);
-            this.btnDarDeBaja.TabIndex = 19;
+            this.btnDarDeBaja.Size = new System.Drawing.Size(125, 42);
+            this.btnDarDeBaja.TabIndex = 11;
             this.btnDarDeBaja.Text = "Dar de Baja ";
             this.btnDarDeBaja.UseVisualStyleBackColor = true;
             // 
-            // btnAceptarVendedor
+            // btnEditar
             // 
-            this.btnAceptarVendedor.Location = new System.Drawing.Point(606, 16);
-            this.btnAceptarVendedor.Name = "btnAceptarVendedor";
-            this.btnAceptarVendedor.Size = new System.Drawing.Size(75, 23);
-            this.btnAceptarVendedor.TabIndex = 20;
-            this.btnAceptarVendedor.Text = "Aceptar";
-            this.btnAceptarVendedor.UseVisualStyleBackColor = true;
+            this.btnEditar.Location = new System.Drawing.Point(249, 463);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(75, 42);
+            this.btnEditar.TabIndex = 10;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnAceptarVendedor_Click);
+            // 
+            // lblObservaciones
+            // 
+            this.lblObservaciones.AutoSize = true;
+            this.lblObservaciones.Location = new System.Drawing.Point(28, 378);
+            this.lblObservaciones.Name = "lblObservaciones";
+            this.lblObservaciones.Size = new System.Drawing.Size(105, 16);
+            this.lblObservaciones.TabIndex = 13;
+            this.lblObservaciones.Text = "Observaciones :";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(206, 342);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(333, 96);
+            this.richTextBox1.TabIndex = 14;
+            this.richTextBox1.Text = "";
             // 
             // FrmIngresarEditarVendedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAceptarVendedor);
+            this.ClientSize = new System.Drawing.Size(800, 530);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.lblObservaciones);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnDarDeBaja);
             this.Controls.Add(this.BtnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -273,12 +275,12 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label lblBuscar;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button BtnCancelar;
         private System.Windows.Forms.Button btnDarDeBaja;
-        private System.Windows.Forms.Button btnAceptarVendedor;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Label lblObservaciones;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

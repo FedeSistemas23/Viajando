@@ -101,7 +101,7 @@ namespace Loggin
 
         private void darDeBajaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmIngresarEditarVendedor vendedor = new FrmIngresarEditarVendedor(0);
+            FrmIngresarEditarVendedor vendedor = new FrmIngresarEditarVendedor();
             vendedor.Show();
         }
 
@@ -130,7 +130,7 @@ namespace Loggin
 
         private void eliminarPagoToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmPagoProveedores pagoProveedores = new FrmPagoProveedores(0,1);
+            FrmPagoProveedores pagoProveedores = new FrmPagoProveedores(0, 1);
             pagoProveedores.Show();
         }
 
@@ -142,7 +142,38 @@ namespace Loggin
 
         private void darDeBajaCoordinadorToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            FrmIngresarEditarCoordinador coordinador = new FrmIngresarEditarCoordinador(0);
+            coordinador.Show();
+        }
 
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmIngresarEditarVendedor vendedor = new FrmIngresarEditarVendedor(0);
+            vendedor.Show();
+        }
+
+        private void ingresarEditarCoordinadorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIngresarEditarCoordinador cordinador = new FrmIngresarEditarCoordinador();
+            cordinador.Show();
+        }
+
+        private void hotelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor(0);
+            proveedor.Show();
+        }
+
+        private void busesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor(0,1);
+            proveedor.Show();
+        }
+
+        private void editarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor();
+            proveedor.Show();
         }
     }
 }

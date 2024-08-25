@@ -76,6 +76,18 @@
     <Compile Include="Disponibilidad.Designer.cs">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIngresarEditarCoordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresarEditarCoordinador.Designer.cs">
+      <DependentUpon>FrmIngresarEditarCoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresarEditarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresarEditarProveedor.Designer.cs">
+      <DependentUpon>FrmIngresarEditarProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIngresarEditarVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,12 +111,6 @@
     </Compile>
     <Compile Include="FrmPagoVendedor.Designer.cs">
       <DependentUpon>FrmPagoVendedor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmVendedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmVendedor.Designer.cs">
-      <DependentUpon>FrmVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPpal.cs">
       <SubType>Form</SubType>
@@ -165,6 +171,12 @@
     <EmbeddedResource Include="Disponibilidad.resx">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarEditarCoordinador.resx">
+      <DependentUpon>FrmIngresarEditarCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresarEditarProveedor.resx">
+      <DependentUpon>FrmIngresarEditarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarVendedor.resx">
       <DependentUpon>FrmIngresarEditarVendedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,9 +188,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPagoVendedor.resx">
       <DependentUpon>FrmPagoVendedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmVendedor.resx">
-      <DependentUpon>FrmVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPpal.resx">
       <DependentUpon>MenuPpal.cs</DependentUpon>
