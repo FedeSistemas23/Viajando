@@ -26,5 +26,11 @@ namespace interfazPpal
                 btnEditar.Visible = false;
             }
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            FrmBuscarCoordinador coordinador = new FrmBuscarCoordinador();
+            coordinador.Show();
+        }
     }
 }

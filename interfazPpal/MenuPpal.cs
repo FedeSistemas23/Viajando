@@ -175,5 +175,39 @@ namespace Loggin
             FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor();
             proveedor.Show();
         }
+
+        private void paquetesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmBuscarPaquete paquete = new FrmBuscarPaquete();
+            paquete.Show();
+        }
+
+        private void reservasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmBuscarReserva reserva = new FrmBuscarReserva();
+            reserva.Show();
+        }
+
+        private void vendedoresToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FrmBuscarVendedor vendedor = new FrmBuscarVendedor();
+            vendedor.Show();
+        }
+
+        private void coordinadoresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmBuscarCoordinador coordinador = new FrmBuscarCoordinador();
+            coordinador.Show();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deHotelesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

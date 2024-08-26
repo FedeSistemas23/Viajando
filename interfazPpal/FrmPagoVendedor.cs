@@ -31,5 +31,11 @@ namespace interfazPpal
         {
 
         }
+
+        private void btnBuscarReserva_Click(object sender, EventArgs e)
+        {
+            FrmBuscarReserva reserva = new FrmBuscarReserva();
+            reserva.Show();
+        }
     }
 }

@@ -51,167 +51,187 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(286, 456);
+            this.btnEditar.Location = new System.Drawing.Point(214, 370);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 42);
+            this.btnEditar.Size = new System.Drawing.Size(56, 34);
             this.btnEditar.TabIndex = 29;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // btnDarDeBaja
             // 
-            this.btnDarDeBaja.Location = new System.Drawing.Point(397, 456);
+            this.btnDarDeBaja.Location = new System.Drawing.Point(298, 370);
+            this.btnDarDeBaja.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDarDeBaja.Name = "btnDarDeBaja";
-            this.btnDarDeBaja.Size = new System.Drawing.Size(125, 42);
+            this.btnDarDeBaja.Size = new System.Drawing.Size(94, 34);
             this.btnDarDeBaja.TabIndex = 30;
             this.btnDarDeBaja.Text = "Dar de Baja ";
             this.btnDarDeBaja.UseVisualStyleBackColor = true;
             // 
             // BtnCancelar
             // 
-            this.BtnCancelar.Location = new System.Drawing.Point(571, 456);
+            this.BtnCancelar.Location = new System.Drawing.Point(428, 370);
+            this.BtnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(75, 42);
+            this.BtnCancelar.Size = new System.Drawing.Size(56, 34);
             this.BtnCancelar.TabIndex = 31;
             this.BtnCancelar.Text = "Cancelar";
             this.BtnCancelar.UseVisualStyleBackColor = true;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(175, 456);
+            this.btnGuardar.Location = new System.Drawing.Point(131, 370);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 42);
+            this.btnGuardar.Size = new System.Drawing.Size(56, 34);
             this.btnGuardar.TabIndex = 28;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(303, 30);
+            this.btnBuscar.Location = new System.Drawing.Point(227, 24);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(150, 34);
+            this.btnBuscar.Size = new System.Drawing.Size(112, 28);
             this.btnBuscar.TabIndex = 14;
             this.btnBuscar.Text = "Buscar Coordinador";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(224, 124);
+            this.textBox6.Location = new System.Drawing.Point(168, 101);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(272, 22);
+            this.textBox6.Size = new System.Drawing.Size(205, 20);
             this.textBox6.TabIndex = 19;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(224, 161);
+            this.textBox5.Location = new System.Drawing.Point(168, 131);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(272, 22);
+            this.textBox5.Size = new System.Drawing.Size(205, 20);
             this.textBox5.TabIndex = 21;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(224, 198);
+            this.textBox4.Location = new System.Drawing.Point(168, 161);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(272, 22);
+            this.textBox4.Size = new System.Drawing.Size(205, 20);
             this.textBox4.TabIndex = 22;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(224, 236);
+            this.textBox3.Location = new System.Drawing.Point(168, 192);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(272, 22);
+            this.textBox3.Size = new System.Drawing.Size(205, 20);
             this.textBox3.TabIndex = 24;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(224, 267);
+            this.textBox2.Location = new System.Drawing.Point(168, 217);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(272, 22);
+            this.textBox2.Size = new System.Drawing.Size(205, 20);
             this.textBox2.TabIndex = 26;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(224, 85);
+            this.txtNombre.Location = new System.Drawing.Point(168, 69);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(272, 22);
+            this.txtNombre.Size = new System.Drawing.Size(205, 20);
             this.txtNombre.TabIndex = 17;
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(47, 273);
+            this.lblEmail.Location = new System.Drawing.Point(35, 222);
+            this.lblEmail.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(54, 16);
+            this.lblEmail.Size = new System.Drawing.Size(44, 13);
             this.lblEmail.TabIndex = 23;
             this.lblEmail.Text = "E-mail : ";
             // 
             // lblTelefono
             // 
             this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(47, 242);
+            this.lblTelefono.Location = new System.Drawing.Point(35, 197);
+            this.lblTelefono.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.Size = new System.Drawing.Size(49, 13);
             this.lblTelefono.TabIndex = 20;
             this.lblTelefono.Text = "Telefono";
             // 
             // lblDomicilio
             // 
             this.lblDomicilio.AutoSize = true;
-            this.lblDomicilio.Location = new System.Drawing.Point(47, 204);
+            this.lblDomicilio.Location = new System.Drawing.Point(35, 166);
+            this.lblDomicilio.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDomicilio.Name = "lblDomicilio";
-            this.lblDomicilio.Size = new System.Drawing.Size(72, 16);
+            this.lblDomicilio.Size = new System.Drawing.Size(58, 13);
             this.lblDomicilio.TabIndex = 18;
             this.lblDomicilio.Text = "Domicilio : ";
             // 
             // lblDni
             // 
             this.lblDni.AutoSize = true;
-            this.lblDni.Location = new System.Drawing.Point(47, 167);
+            this.lblDni.Location = new System.Drawing.Point(35, 136);
+            this.lblDni.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDni.Name = "lblDni";
-            this.lblDni.Size = new System.Drawing.Size(36, 16);
+            this.lblDni.Size = new System.Drawing.Size(32, 13);
             this.lblDni.TabIndex = 16;
             this.lblDni.Text = "Dni : ";
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(46, 124);
+            this.lblApellido.Location = new System.Drawing.Point(34, 101);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(66, 16);
+            this.lblApellido.Size = new System.Drawing.Size(53, 13);
             this.lblApellido.TabIndex = 15;
             this.lblApellido.Text = "Apellido : ";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(46, 88);
+            this.lblNombre.Location = new System.Drawing.Point(34, 72);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(65, 16);
+            this.lblNombre.Size = new System.Drawing.Size(53, 13);
             this.lblNombre.TabIndex = 13;
             this.lblNombre.Text = "Nombre : ";
             // 
             // lblObservaciones
             // 
             this.lblObservaciones.AutoSize = true;
-            this.lblObservaciones.Location = new System.Drawing.Point(46, 369);
+            this.lblObservaciones.Location = new System.Drawing.Point(34, 300);
+            this.lblObservaciones.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblObservaciones.Name = "lblObservaciones";
-            this.lblObservaciones.Size = new System.Drawing.Size(105, 16);
+            this.lblObservaciones.Size = new System.Drawing.Size(84, 13);
             this.lblObservaciones.TabIndex = 32;
             this.lblObservaciones.Text = "Observaciones :";
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(224, 322);
+            this.richTextBox1.Location = new System.Drawing.Point(168, 262);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(382, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(288, 79);
             this.richTextBox1.TabIndex = 33;
             this.richTextBox1.Text = "";
             // 
             // FrmIngresarEditarCoordinador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 528);
+            this.ClientSize = new System.Drawing.Size(600, 429);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.lblObservaciones);
             this.Controls.Add(this.btnEditar);
@@ -231,6 +251,7 @@
             this.Controls.Add(this.lblDni);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.lblNombre);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmIngresarEditarCoordinador";
             this.Text = "FrmIngresarEditarCoordinador";
             this.ResumeLayout(false);

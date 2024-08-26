@@ -18,17 +18,23 @@ namespace interfazPpal
             InitializeComponent();
             btnGuardar.Enabled = false;
             btnEditar.Enabled = false;
-           
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-            {
+        {
 
-            }
+        }
 
         private void btnAceptarVendedor_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            FrmBuscarVendedor vendedor = new FrmBuscarVendedor();
+            vendedor.Show();
+        }
     }
-    }
+}

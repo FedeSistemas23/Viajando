@@ -64,7 +64,7 @@
             // btnBuscarVendedor
             // 
             this.btnBuscarVendedor.Location = new System.Drawing.Point(525, 81);
-            this.btnBuscarVendedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarVendedor.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarVendedor.Name = "btnBuscarVendedor";
             this.btnBuscarVendedor.Size = new System.Drawing.Size(98, 31);
             this.btnBuscarVendedor.TabIndex = 1;
@@ -125,7 +125,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(186, 57);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(2);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(286, 20);
             this.txtApellido.TabIndex = 2;
@@ -144,7 +144,7 @@
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCancelar.Location = new System.Drawing.Point(376, 378);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(63, 28);
             this.btnCancelar.TabIndex = 17;
@@ -154,7 +154,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Location = new System.Drawing.Point(94, 378);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(56, 28);
             this.btnGuardar.TabIndex = 14;
@@ -164,7 +164,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(186, 81);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(286, 20);
             this.txtEmail.TabIndex = 3;
@@ -172,7 +172,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(186, 105);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(286, 20);
             this.txtTelefono.TabIndex = 4;
@@ -180,7 +180,7 @@
             // txtEnConcepto
             // 
             this.txtEnConcepto.Location = new System.Drawing.Point(186, 185);
-            this.txtEnConcepto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEnConcepto.Margin = new System.Windows.Forms.Padding(2);
             this.txtEnConcepto.Name = "txtEnConcepto";
             this.txtEnConcepto.Size = new System.Drawing.Size(286, 20);
             this.txtEnConcepto.TabIndex = 8;
@@ -188,7 +188,7 @@
             // txtNumeroReserva
             // 
             this.txtNumeroReserva.Location = new System.Drawing.Point(186, 209);
-            this.txtNumeroReserva.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumeroReserva.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroReserva.Name = "txtNumeroReserva";
             this.txtNumeroReserva.Size = new System.Drawing.Size(118, 20);
             this.txtNumeroReserva.TabIndex = 9;
@@ -196,7 +196,7 @@
             // dtpFechaPago
             // 
             this.dtpFechaPago.Location = new System.Drawing.Point(186, 129);
-            this.dtpFechaPago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFechaPago.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFechaPago.Name = "dtpFechaPago";
             this.dtpFechaPago.Size = new System.Drawing.Size(271, 20);
             this.dtpFechaPago.TabIndex = 5;
@@ -214,7 +214,7 @@
             // btnCargar
             // 
             this.btnCargar.Location = new System.Drawing.Point(335, 210);
-            this.btnCargar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCargar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(56, 29);
             this.btnCargar.TabIndex = 10;
@@ -225,7 +225,7 @@
             // 
             this.dgvReservasPagas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvReservasPagas.Location = new System.Drawing.Point(30, 243);
-            this.dgvReservasPagas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvReservasPagas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvReservasPagas.Name = "dgvReservasPagas";
             this.dgvReservasPagas.RowHeadersWidth = 51;
             this.dgvReservasPagas.RowTemplate.Height = 24;
@@ -236,7 +236,7 @@
             // 
             this.chbEfectivo.AutoSize = true;
             this.chbEfectivo.Location = new System.Drawing.Point(186, 158);
-            this.chbEfectivo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbEfectivo.Margin = new System.Windows.Forms.Padding(2);
             this.chbEfectivo.Name = "chbEfectivo";
             this.chbEfectivo.Size = new System.Drawing.Size(65, 17);
             this.chbEfectivo.TabIndex = 6;
@@ -247,7 +247,7 @@
             // 
             this.chbTransferencia.AutoSize = true;
             this.chbTransferencia.Location = new System.Drawing.Point(290, 157);
-            this.chbTransferencia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbTransferencia.Margin = new System.Windows.Forms.Padding(2);
             this.chbTransferencia.Name = "chbTransferencia";
             this.chbTransferencia.Size = new System.Drawing.Size(91, 17);
             this.chbTransferencia.TabIndex = 7;
@@ -268,7 +268,7 @@
             // txtMontoPagado
             // 
             this.txtMontoPagado.Location = new System.Drawing.Point(186, 345);
-            this.txtMontoPagado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMontoPagado.Margin = new System.Windows.Forms.Padding(2);
             this.txtMontoPagado.Name = "txtMontoPagado";
             this.txtMontoPagado.Size = new System.Drawing.Size(118, 20);
             this.txtMontoPagado.TabIndex = 13;
@@ -276,7 +276,7 @@
             // btnEditar
             // 
             this.btnEditar.Location = new System.Drawing.Point(186, 378);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(56, 28);
             this.btnEditar.TabIndex = 15;
@@ -302,6 +302,7 @@
             this.btnBuscarReserva.TabIndex = 11;
             this.btnBuscarReserva.Text = "Buscar Reserva";
             this.btnBuscarReserva.UseVisualStyleBackColor = true;
+            this.btnBuscarReserva.Click += new System.EventHandler(this.btnBuscarReserva_Click);
             // 
             // btnExportar
             // 
@@ -389,7 +390,7 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblApellido);
             this.Controls.Add(this.btnBuscarVendedor);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmPagoVendedor";
             this.Text = "FrmPagoVendedor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReservasPagas)).EndInit();

@@ -76,6 +76,42 @@
     <Compile Include="Disponibilidad.Designer.cs">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBuscarCoordinador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarCoordinador.Designer.cs">
+      <DependentUpon>FrmBuscarCoordinador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarPaquete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarPaquete.Designer.cs">
+      <DependentUpon>FrmBuscarPaquete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarPasajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarPasajero.Designer.cs">
+      <DependentUpon>FrmBuscarPasajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarProveedor.Designer.cs">
+      <DependentUpon>FrmBuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarReserva.Designer.cs">
+      <DependentUpon>FrmBuscarReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBuscarVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBuscarVendedor.Designer.cs">
+      <DependentUpon>FrmBuscarVendedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIngresarEditarCoordinador.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +206,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Disponibilidad.resx">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarCoordinador.resx">
+      <DependentUpon>FrmBuscarCoordinador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarPaquete.resx">
+      <DependentUpon>FrmBuscarPaquete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarPasajero.resx">
+      <DependentUpon>FrmBuscarPasajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarProveedor.resx">
+      <DependentUpon>FrmBuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarReserva.resx">
+      <DependentUpon>FrmBuscarReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBuscarVendedor.resx">
+      <DependentUpon>FrmBuscarVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarCoordinador.resx">
       <DependentUpon>FrmIngresarEditarCoordinador.cs</DependentUpon>
