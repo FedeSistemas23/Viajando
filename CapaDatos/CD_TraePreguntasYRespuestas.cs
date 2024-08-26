@@ -18,7 +18,7 @@ namespace CapaDatos
         public void TraerPreguntasyRespuestas()
         {
                 cmd.Connection = conexion.AbrirConexion();
-                cmd.CommandText = "TraerPreguntas";
+                cmd.CommandText = "PregYRespSeg";
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Id_Usuario", CS_Usuario.Id_Usuario);                
                 SqlDataReader leer = cmd.ExecuteReader();                                      
