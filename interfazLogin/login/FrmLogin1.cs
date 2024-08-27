@@ -110,6 +110,7 @@ namespace interfazLogin
             string password = txtPass.Text;
             string userpass = username + password;
             string hasheo2 = Seguridad.SHA256(userpass);
+            int digito = CreaDigitoVerificador.Calcular(hasheo2);
             interfazPpal.Menu menu = new interfazPpal.Menu();
             
             if (txtUsuario.Text != "Ej.: ejemplo@gmail.com")
@@ -119,7 +120,7 @@ namespace interfazLogin
                     bool userexist = validarusuario.ValidarUsuarioL(username);
                     if (userexist)
                     {
-                        if (hasheo2 == CS_Usuario.password)
+                        if (hasheo2 == CS_Usuario.password/*&& digito== CS_usuario.digito*/)
                         {
                             if (CS_Usuario.fechaPrimerIngreso == DateTime.Now)
                             {
