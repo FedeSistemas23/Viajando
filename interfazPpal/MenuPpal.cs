@@ -64,7 +64,7 @@ namespace Loggin
 
         private void editarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            CrearReserva frm = new CrearReserva();
+            FrmIngresarEditarReseerva frm = new FrmIngresarEditarReseerva();
             AbrirFormuEnPanelMenu(frm);
         }
 
@@ -78,7 +78,7 @@ namespace Loggin
 
         private void crearNuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CrearPaquete frm = new CrearPaquete();
+            FrmIngresarEditarPaquete frm = new FrmIngresarEditarPaquete();
             AbrirFormuEnPanelMenu(frm);
         }
 

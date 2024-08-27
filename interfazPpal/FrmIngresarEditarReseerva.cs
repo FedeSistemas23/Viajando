@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Loggin
 {
-    public partial class CrearReserva : Form
+    public partial class FrmIngresarEditarReseerva : Form
     {
-        public CrearReserva()
+        public FrmIngresarEditarReseerva()
         {
             InitializeComponent();
         }

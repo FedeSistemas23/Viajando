@@ -1,6 +1,6 @@
 ﻿namespace Loggin
 {
-    partial class CrearReserva
+    partial class FrmIngresarEditarReseerva
     {
         /// <summary>
         /// Required designer variable.
