@@ -52,12 +52,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(298, 65);
+            this.label1.Font = new System.Drawing.Font("Microsoft JhengHei", 29.75F);
+            this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label1.Location = new System.Drawing.Point(180, 53);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(423, 49);
+            this.label1.Size = new System.Drawing.Size(490, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cambio Contraseña";
             // 
@@ -65,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(175, 143);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -75,7 +75,7 @@
             // 
             // btnCambiar
             // 
-            this.btnCambiar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnCambiar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCambiar.Enabled = false;
             this.btnCambiar.FlatAppearance.BorderSize = 0;
             this.btnCambiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -122,7 +122,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(169, 322);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -134,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label4.Location = new System.Drawing.Point(173, 242);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -146,7 +146,7 @@
             // 
             this.ckbMinimo.AutoSize = true;
             this.ckbMinimo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbMinimo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ckbMinimo.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ckbMinimo.Location = new System.Drawing.Point(180, 402);
             this.ckbMinimo.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMinimo.Name = "ckbMinimo";
@@ -160,7 +160,7 @@
             // 
             this.ckbMinuscula.AutoSize = true;
             this.ckbMinuscula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbMinuscula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ckbMinuscula.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ckbMinuscula.Location = new System.Drawing.Point(180, 442);
             this.ckbMinuscula.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMinuscula.Name = "ckbMinuscula";
@@ -173,7 +173,7 @@
             // 
             this.ckbMayuscula.AutoSize = true;
             this.ckbMayuscula.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbMayuscula.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ckbMayuscula.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ckbMayuscula.Location = new System.Drawing.Point(180, 481);
             this.ckbMayuscula.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMayuscula.Name = "ckbMayuscula";
@@ -186,7 +186,7 @@
             // 
             this.ckbNumero.AutoSize = true;
             this.ckbNumero.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbNumero.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ckbNumero.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ckbNumero.Location = new System.Drawing.Point(180, 521);
             this.ckbNumero.Margin = new System.Windows.Forms.Padding(4);
             this.ckbNumero.Name = "ckbNumero";
@@ -199,7 +199,7 @@
             // 
             this.ckbEspecial.AutoSize = true;
             this.ckbEspecial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ckbEspecial.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ckbEspecial.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ckbEspecial.Location = new System.Drawing.Point(180, 561);
             this.ckbEspecial.Margin = new System.Windows.Forms.Padding(4);
             this.ckbEspecial.Name = "ckbEspecial";
@@ -223,7 +223,7 @@
             // 
             this.lblError.AutoSize = true;
             this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblError.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblError.ForeColor = System.Drawing.SystemColors.WindowText;
             this.lblError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblError.Location = new System.Drawing.Point(208, 633);
             this.lblError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -235,6 +235,7 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnCerrar.ErrorImage = null;
             this.btnCerrar.Location = new System.Drawing.Point(829, 15);
             this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
@@ -262,7 +263,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(869, 837);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.pictureBox2);

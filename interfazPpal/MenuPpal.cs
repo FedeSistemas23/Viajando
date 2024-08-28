@@ -41,9 +41,9 @@ namespace Loggin
         }
         private void altaUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Alta_de_Usuarios formAlta = new Alta_de_Usuarios();
-
-            AbrirFormuEnPanelMenu(formAlta);
+            Alta_de_Usuarios form= new Alta_de_Usuarios();
+            form.ShowDialog();
+          //  AbrirFormuEnPanelMenu(formAlta);
 
             //Alta_de_Usuarios frm = new Alta_de_Usuarios();
             //nuContenedor.Show();
@@ -51,8 +51,7 @@ namespace Loggin
 
         private void preguntasSeguridadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Preguntas_Seguridad frm = new Preguntas_Seguridad();
-            AbrirFormuEnPanelMenu(frm);
+            
 
 
         }
@@ -206,6 +205,11 @@ namespace Loggin
         }
 
         private void deHotelesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void usuariosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
         }

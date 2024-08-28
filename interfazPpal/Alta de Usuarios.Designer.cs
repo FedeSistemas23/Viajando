@@ -108,7 +108,7 @@
             this.panelContenedor.Controls.Add(this.button2);
             this.panelContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContenedor.Location = new System.Drawing.Point(0, 0);
-            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.panelContenedor.Name = "panelContenedor";
             this.panelContenedor.Size = new System.Drawing.Size(1393, 834);
             this.panelContenedor.TabIndex = 0;
@@ -135,11 +135,11 @@
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.checkBox4);
-            this.groupBox3.Location = new System.Drawing.Point(1033, 26);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(516, 214);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox3.Size = new System.Drawing.Size(569, 359);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(509, 312);
             this.groupBox3.TabIndex = 30;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Seguridad y Contraseña";
@@ -149,7 +149,7 @@
             // 
             this.checkBox9.AutoSize = true;
             this.checkBox9.Location = new System.Drawing.Point(24, 183);
-            this.checkBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox9.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox9.Name = "checkBox9";
             this.checkBox9.Size = new System.Drawing.Size(228, 20);
             this.checkBox9.TabIndex = 49;
@@ -169,7 +169,7 @@
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(400, 85);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(109, 22);
             this.numericUpDown2.TabIndex = 47;
@@ -178,7 +178,7 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.Location = new System.Drawing.Point(23, 87);
-            this.checkBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox7.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(235, 20);
             this.checkBox7.TabIndex = 45;
@@ -189,7 +189,7 @@
             // 
             this.ckbMinimo.AutoSize = true;
             this.ckbMinimo.Location = new System.Drawing.Point(323, 151);
-            this.ckbMinimo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbMinimo.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMinimo.Name = "ckbMinimo";
             this.ckbMinimo.Size = new System.Drawing.Size(156, 20);
             this.ckbMinimo.TabIndex = 44;
@@ -200,7 +200,7 @@
             // 
             this.ckbEspecial.AutoSize = true;
             this.ckbEspecial.Location = new System.Drawing.Point(143, 151);
-            this.ckbEspecial.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbEspecial.Margin = new System.Windows.Forms.Padding(4);
             this.ckbEspecial.Name = "ckbEspecial";
             this.ckbEspecial.Size = new System.Drawing.Size(146, 20);
             this.ckbEspecial.TabIndex = 43;
@@ -211,7 +211,7 @@
             // 
             this.ckbNumero.AutoSize = true;
             this.ckbNumero.Location = new System.Drawing.Point(24, 151);
-            this.ckbNumero.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbNumero.Margin = new System.Windows.Forms.Padding(4);
             this.ckbNumero.Name = "ckbNumero";
             this.ckbNumero.Size = new System.Drawing.Size(87, 20);
             this.ckbNumero.TabIndex = 42;
@@ -222,7 +222,7 @@
             // 
             this.ckbMayúscula.AutoSize = true;
             this.ckbMayúscula.Location = new System.Drawing.Point(403, 117);
-            this.ckbMayúscula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbMayúscula.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMayúscula.Name = "ckbMayúscula";
             this.ckbMayúscula.Size = new System.Drawing.Size(104, 20);
             this.ckbMayúscula.TabIndex = 40;
@@ -233,7 +233,7 @@
             // 
             this.ckbMinuscula.AutoSize = true;
             this.ckbMinuscula.Location = new System.Drawing.Point(264, 118);
-            this.ckbMinuscula.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbMinuscula.Margin = new System.Windows.Forms.Padding(4);
             this.ckbMinuscula.Name = "ckbMinuscula";
             this.ckbMinuscula.Size = new System.Drawing.Size(99, 20);
             this.ckbMinuscula.TabIndex = 39;
@@ -253,7 +253,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(361, 318);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(129, 22);
             this.numericUpDown1.TabIndex = 37;
@@ -262,7 +262,7 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.Location = new System.Drawing.Point(24, 215);
-            this.checkBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox6.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(145, 20);
             this.checkBox6.TabIndex = 36;
@@ -273,7 +273,7 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.Location = new System.Drawing.Point(23, 318);
-            this.checkBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox5.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(174, 20);
             this.checkBox5.TabIndex = 35;
@@ -284,7 +284,7 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(24, 119);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(217, 20);
             this.checkBox1.TabIndex = 34;
@@ -296,7 +296,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(207, 278);
-            this.checkBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(158, 20);
             this.checkBox2.TabIndex = 33;
@@ -307,7 +307,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(24, 278);
-            this.checkBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(134, 20);
             this.checkBox3.TabIndex = 32;
@@ -317,7 +317,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(259, 54);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(172, 22);
             this.textBox1.TabIndex = 31;
@@ -336,7 +336,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Location = new System.Drawing.Point(23, 58);
-            this.checkBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(4);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(124, 20);
             this.checkBox4.TabIndex = 29;
@@ -348,10 +348,10 @@
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(13, 561);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(1555, 283);
+            this.dataGridView1.Size = new System.Drawing.Size(1155, 283);
             this.dataGridView1.TabIndex = 29;
             // 
             // groupBox2
@@ -366,10 +366,10 @@
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.cmbFamimlias);
             this.groupBox2.Location = new System.Drawing.Point(516, 16);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox2.Size = new System.Drawing.Size(509, 421);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(509, 190);
             this.groupBox2.TabIndex = 28;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Famiias y Roles";
@@ -378,7 +378,7 @@
             // txtVencimiento
             // 
             this.txtVencimiento.Location = new System.Drawing.Point(260, 54);
-            this.txtVencimiento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtVencimiento.Margin = new System.Windows.Forms.Padding(4);
             this.txtVencimiento.Name = "txtVencimiento";
             this.txtVencimiento.Size = new System.Drawing.Size(213, 22);
             this.txtVencimiento.TabIndex = 28;
@@ -397,7 +397,7 @@
             // 
             this.ckbUsuarioTemporal.AutoSize = true;
             this.ckbUsuarioTemporal.Location = new System.Drawing.Point(24, 57);
-            this.ckbUsuarioTemporal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ckbUsuarioTemporal.Margin = new System.Windows.Forms.Padding(4);
             this.ckbUsuarioTemporal.Name = "ckbUsuarioTemporal";
             this.ckbUsuarioTemporal.Size = new System.Drawing.Size(138, 20);
             this.ckbUsuarioTemporal.TabIndex = 26;
@@ -407,7 +407,7 @@
             // nudVencePermisos
             // 
             this.nudVencePermisos.Location = new System.Drawing.Point(260, 145);
-            this.nudVencePermisos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nudVencePermisos.Margin = new System.Windows.Forms.Padding(4);
             this.nudVencePermisos.Name = "nudVencePermisos";
             this.nudVencePermisos.Size = new System.Drawing.Size(215, 22);
             this.nudVencePermisos.TabIndex = 25;
@@ -462,7 +462,7 @@
             "Realizar Informe de Pagos",
             ""});
             this.cmbPermisos.Location = new System.Drawing.Point(260, 103);
-            this.cmbPermisos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbPermisos.Margin = new System.Windows.Forms.Padding(4);
             this.cmbPermisos.Name = "cmbPermisos";
             this.cmbPermisos.Size = new System.Drawing.Size(213, 24);
             this.cmbPermisos.TabIndex = 22;
@@ -486,7 +486,7 @@
             "Administración",
             "Vendedor"});
             this.cmbFamimlias.Location = new System.Drawing.Point(24, 103);
-            this.cmbFamimlias.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFamimlias.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFamimlias.Name = "cmbFamimlias";
             this.cmbFamimlias.Size = new System.Drawing.Size(213, 24);
             this.cmbFamimlias.TabIndex = 0;
@@ -519,9 +519,9 @@
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(480, 422);
             this.groupBox1.TabIndex = 27;
             this.groupBox1.TabStop = false;
@@ -540,7 +540,7 @@
             // txtNombreUsuario
             // 
             this.txtNombreUsuario.Location = new System.Drawing.Point(7, 49);
-            this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreUsuario.Name = "txtNombreUsuario";
             this.txtNombreUsuario.Size = new System.Drawing.Size(219, 22);
             this.txtNombreUsuario.TabIndex = 24;
@@ -559,7 +559,7 @@
             // 
             this.txtLocalidad.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtLocalidad.Location = new System.Drawing.Point(241, 289);
-            this.txtLocalidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLocalidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocalidad.Name = "txtLocalidad";
             this.txtLocalidad.Size = new System.Drawing.Size(219, 22);
             this.txtLocalidad.TabIndex = 22;
@@ -577,7 +577,7 @@
             // txtCelular
             // 
             this.txtCelular.Location = new System.Drawing.Point(241, 194);
-            this.txtCelular.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCelular.Margin = new System.Windows.Forms.Padding(4);
             this.txtCelular.Name = "txtCelular";
             this.txtCelular.Size = new System.Drawing.Size(219, 22);
             this.txtCelular.TabIndex = 20;
@@ -585,7 +585,7 @@
             // txtEmail
             // 
             this.txtEmail.Location = new System.Drawing.Point(8, 338);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(219, 22);
             this.txtEmail.TabIndex = 19;
@@ -603,7 +603,7 @@
             // txtNumCalle
             // 
             this.txtNumCalle.Location = new System.Drawing.Point(241, 241);
-            this.txtNumCalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumCalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumCalle.Name = "txtNumCalle";
             this.txtNumCalle.Size = new System.Drawing.Size(219, 22);
             this.txtNumCalle.TabIndex = 17;
@@ -621,7 +621,7 @@
             // txtCalle
             // 
             this.txtCalle.Location = new System.Drawing.Point(7, 241);
-            this.txtCalle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCalle.Margin = new System.Windows.Forms.Padding(4);
             this.txtCalle.Name = "txtCalle";
             this.txtCalle.Size = new System.Drawing.Size(220, 22);
             this.txtCalle.TabIndex = 15;
@@ -639,7 +639,7 @@
             // txtBarrio
             // 
             this.txtBarrio.Location = new System.Drawing.Point(8, 289);
-            this.txtBarrio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtBarrio.Margin = new System.Windows.Forms.Padding(4);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(219, 22);
             this.txtBarrio.TabIndex = 13;
@@ -678,7 +678,7 @@
             // 
             this.txtTipoDoc.FormattingEnabled = true;
             this.txtTipoDoc.Location = new System.Drawing.Point(8, 145);
-            this.txtTipoDoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipoDoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipoDoc.Name = "txtTipoDoc";
             this.txtTipoDoc.Size = new System.Drawing.Size(219, 24);
             this.txtTipoDoc.TabIndex = 8;
@@ -686,7 +686,7 @@
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(8, 194);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(4);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(219, 22);
             this.txtTelefono.TabIndex = 7;
@@ -704,7 +704,7 @@
             // txtNumDoc
             // 
             this.txtNumDoc.Location = new System.Drawing.Point(241, 145);
-            this.txtNumDoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumDoc.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumDoc.Multiline = true;
             this.txtNumDoc.Name = "txtNumDoc";
             this.txtNumDoc.Size = new System.Drawing.Size(219, 24);
@@ -723,7 +723,7 @@
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(241, 97);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(219, 22);
             this.txtApellido.TabIndex = 3;
@@ -741,7 +741,7 @@
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(8, 97);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(219, 22);
             this.txtNombre.TabIndex = 1;
@@ -763,7 +763,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(1408, 465);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 39);
             this.button1.TabIndex = 3;
@@ -776,8 +776,8 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(1187, 475);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(53, 492);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(164, 39);
             this.button2.TabIndex = 2;
@@ -792,7 +792,7 @@
             this.ClientSize = new System.Drawing.Size(1393, 834);
             this.Controls.Add(this.panelContenedor);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Alta_de_Usuarios";
             this.Text = "Alta de Usuarios";
             this.panelContenedor.ResumeLayout(false);

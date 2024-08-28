@@ -22,7 +22,7 @@ namespace CapaNegocio
         public void GuardarPaqueteL(Paquete paquete)
         {
             
-            paquete.GuardarPaquete(paquete);
+           // paquete.GuardarPaquete(paquete);
         }
 
 
