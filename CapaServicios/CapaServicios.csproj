@@ -48,14 +48,14 @@
     <Compile Include="CreaDigitoVerificador.cs" />
     <Compile Include="EnviarMail.cs" />
     <Compile Include="Hasheo.cs" />
-    <Compile Include="MasterValidar.cs" />
-    <Compile Include="Validar8.cs" />
-    <Compile Include="ValidarDigito.cs" />
-    <Compile Include="ValidarEspecial.cs" />
+    <Compile Include="Validar Formato Contraseñas\MasterValidar.cs" />
+    <Compile Include="Validar Formato Contraseñas\Validar8.cs" />
+    <Compile Include="Validar Formato Contraseñas\ValidarDigito.cs" />
+    <Compile Include="Validar Formato Contraseñas\ValidarEspecial.cs" />
     <Compile Include="ValidarMail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValidarMayus.cs" />
-    <Compile Include="ValidarMinus.cs" />
+    <Compile Include="Validar Formato Contraseñas\ValidarMayus.cs" />
+    <Compile Include="Validar Formato Contraseñas\ValidarMinus.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="ADOX">

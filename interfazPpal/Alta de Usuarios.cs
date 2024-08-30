@@ -12,6 +12,8 @@ using System.Windows.Forms;
 using CapaNegocio;
 using CapaNegocio.CN_usuarios;
 
+
+
 namespace Loggin
 {
     public partial class Alta_de_Usuarios : Form
@@ -27,7 +29,7 @@ namespace Loggin
             string pass = Aleatorios.Armar();
             string concatenados = pass + txtNombreUsuario.Text;
             string hasheo = Seguridad.SHA256(concatenados);
-            Usuario NuevoUsuario = new Usuario()
+            AtributosUsuario NuevoUsuario = new AtributosUsuario()
             {
                 Username = txtNombreUsuario.Text,
                 nombre = txtNombre.Text,

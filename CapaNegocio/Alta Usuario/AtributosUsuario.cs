@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 //ordenar los atributos entre los datos de usuario y persona
 namespace CapaNegocio
 {
-   public class Usuario
+   public class AtributosUsuario
     {
         public string Username { get; set; }
         public string nombre { get; set; }
