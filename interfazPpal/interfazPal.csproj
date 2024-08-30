@@ -70,16 +70,16 @@
     <Compile Include="CargaPasajeros.Designer.cs">
       <DependentUpon>CargaPasajeros.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIngresarEditarPaquete.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarPaquete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngresarEditarPaquete.Designer.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarPaquete.Designer.cs">
       <DependentUpon>FrmIngresarEditarPaquete.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIngresarEditarReseerva.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarReseerva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngresarEditarReseerva.Designer.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarReseerva.Designer.cs">
       <DependentUpon>FrmIngresarEditarReseerva.cs</DependentUpon>
     </Compile>
     <Compile Include="Disponibilidad.cs">
@@ -88,76 +88,76 @@
     <Compile Include="Disponibilidad.Designer.cs">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarCoordinador.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarCoordinador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarCoordinador.Designer.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarCoordinador.Designer.cs">
       <DependentUpon>FrmBuscarCoordinador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarPaquete.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarPaquete.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarPaquete.Designer.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarPaquete.Designer.cs">
       <DependentUpon>FrmBuscarPaquete.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarPasajero.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarPasajero.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarPasajero.Designer.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarPasajero.Designer.cs">
       <DependentUpon>FrmBuscarPasajero.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarProveedor.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarProveedor.Designer.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarProveedor.Designer.cs">
       <DependentUpon>FrmBuscarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarReserva.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarReserva.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarReserva.Designer.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarReserva.Designer.cs">
       <DependentUpon>FrmBuscarReserva.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmBuscarVendedor.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmBuscarVendedor.Designer.cs">
+    <Compile Include="FrmsBuscar\FrmBuscarVendedor.Designer.cs">
       <DependentUpon>FrmBuscarVendedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIngresarEditarCoordinador.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarCoordinador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngresarEditarCoordinador.Designer.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarCoordinador.Designer.cs">
       <DependentUpon>FrmIngresarEditarCoordinador.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIngresarEditarProveedor.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngresarEditarProveedor.Designer.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarProveedor.Designer.cs">
       <DependentUpon>FrmIngresarEditarProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmIngresarEditarVendedor.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmIngresarEditarVendedor.Designer.cs">
+    <Compile Include="FrmsIngresarEditar\FrmIngresarEditarVendedor.Designer.cs">
       <DependentUpon>FrmIngresarEditarVendedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPagoProveedores.cs">
+    <Compile Include="FrmsPagos\FrmPagoProveedores.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPagoProveedores.Designer.cs">
+    <Compile Include="FrmsPagos\FrmPagoProveedores.Designer.cs">
       <DependentUpon>FrmPagoProveedores.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPagoRecibidos.cs">
+    <Compile Include="FrmsPagos\FrmPagoRecibidos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPagoRecibidos.Designer.cs">
+    <Compile Include="FrmsPagos\FrmPagoRecibidos.Designer.cs">
       <DependentUpon>FrmPagoRecibidos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPagoVendedor.cs">
+    <Compile Include="FrmsPagos\FrmPagoVendedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPagoVendedor.Designer.cs">
+    <Compile Include="FrmsPagos\FrmPagoVendedor.Designer.cs">
       <DependentUpon>FrmPagoVendedor.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPpal.cs">
@@ -166,38 +166,8 @@
     <Compile Include="MenuPpal.Designer.cs">
       <DependentUpon>MenuPpal.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ConfiguracionDeSeguridad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfiguracionDeSeguridad.Designer.cs">
-      <DependentUpon>ConfiguracionDeSeguridad.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GestionAdministratioContable.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionAdministratioContable.Designer.cs">
-      <DependentUpon>GestionAdministratioContable.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="GestionDeReservas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GestionDeReservas.Designer.cs">
-      <DependentUpon>GestionDeReservas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Usuario.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Usuario.Designer.cs">
-      <DependentUpon>Usuario.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Alta de Usuarios.resx">
       <DependentUpon>Alta de Usuarios.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,62 +180,53 @@
     <EmbeddedResource Include="CargaPasajeros.resx">
       <DependentUpon>CargaPasajeros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIngresarEditarPaquete.resx">
+    <EmbeddedResource Include="FrmsIngresarEditar\FrmIngresarEditarPaquete.resx">
       <DependentUpon>FrmIngresarEditarPaquete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIngresarEditarReseerva.resx">
+    <EmbeddedResource Include="FrmsIngresarEditar\FrmIngresarEditarReseerva.resx">
       <DependentUpon>FrmIngresarEditarReseerva.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Disponibilidad.resx">
       <DependentUpon>Disponibilidad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarCoordinador.resx">
+    <EmbeddedResource Include="FrmsBuscar\FrmBuscarCoordinador.resx">
       <DependentUpon>FrmBuscarCoordinador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarPaquete.resx">
+    <EmbeddedResource Include="FrmsBuscar\FrmBuscarPaquete.resx">
       <DependentUpon>FrmBuscarPaquete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarPasajero.resx">
+    <EmbeddedResource Include="FrmsBuscar\FrmBuscarPasajero.resx">
       <DependentUpon>FrmBuscarPasajero.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarProveedor.resx">
+    <EmbeddedResource Include="FrmsBuscar\FrmBuscarProveedor.resx">
       <DependentUpon>FrmBuscarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarReserva.resx">
+    <EmbeddedResource Include="FrmsBuscar\FrmBuscarReserva.resx">
       <DependentUpon>FrmBuscarReserva.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmBuscarVendedor.resx">
+    <EmbeddedResource Include="FrmsBuscar\FrmBuscarVendedor.resx">
       <DependentUpon>FrmBuscarVendedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIngresarEditarCoordinador.resx">
+    <EmbeddedResource Include="FrmsIngresarEditar\FrmIngresarEditarCoordinador.resx">
       <DependentUpon>FrmIngresarEditarCoordinador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIngresarEditarProveedor.resx">
+    <EmbeddedResource Include="FrmsIngresarEditar\FrmIngresarEditarProveedor.resx">
       <DependentUpon>FrmIngresarEditarProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmIngresarEditarVendedor.resx">
+    <EmbeddedResource Include="FrmsIngresarEditar\FrmIngresarEditarVendedor.resx">
       <DependentUpon>FrmIngresarEditarVendedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPagoProveedores.resx">
+    <EmbeddedResource Include="FrmsPagos\FrmPagoProveedores.resx">
       <DependentUpon>FrmPagoProveedores.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPagoRecibidos.resx">
+    <EmbeddedResource Include="FrmsPagos\FrmPagoRecibidos.resx">
       <DependentUpon>FrmPagoRecibidos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPagoVendedor.resx">
+    <EmbeddedResource Include="FrmsPagos\FrmPagoVendedor.resx">
       <DependentUpon>FrmPagoVendedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPpal.resx">
       <DependentUpon>MenuPpal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
-      <DependentUpon>MenuPrincipal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ConfiguracionDeSeguridad.resx">
-      <DependentUpon>ConfiguracionDeSeguridad.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GestionAdministratioContable.resx">
-      <DependentUpon>GestionAdministratioContable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -277,12 +238,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="GestionDeReservas.resx">
-      <DependentUpon>GestionDeReservas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Usuario.resx">
-      <DependentUpon>Usuario.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
