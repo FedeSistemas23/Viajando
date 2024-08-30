@@ -44,7 +44,6 @@
     <Compile Include="CS_PregRespSeg.cs" />
     <Compile Include="CS_Usuario.cs" />
     <Compile Include="CS_GuardaPreguntasRespuestas.cs" />
-    <Compile Include="Paquete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

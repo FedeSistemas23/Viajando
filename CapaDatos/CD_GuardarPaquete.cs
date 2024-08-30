@@ -14,7 +14,7 @@ namespace CapaDatos
         SqlCommand cmd = new SqlCommand();
         Conexion conexion = new Conexion();
 
-        public void GuardarPaquete(Paquete paquete)
+        /*public void GuardarPaqueteD(Paquete paquete)
         {
             try
             {
@@ -45,6 +45,6 @@ namespace CapaDatos
                 cmd.Parameters.Clear();
                 conexion.CerrarConexion();
             }
-        }
+        }*/
     }
 }

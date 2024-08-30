@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace interfazPpal
 {
-    public partial class CargaPasajeros : Form
+    public partial class FrmCargaPasajeros : Form
     {
-        public CargaPasajeros()
+        public FrmCargaPasajeros()
         {
             InitializeComponent();
         }

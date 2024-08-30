@@ -213,5 +213,10 @@ namespace Loggin
         {
 
         }
+
+        private void ingresarEditarPasajeroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

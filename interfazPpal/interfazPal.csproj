@@ -64,11 +64,11 @@
     <Compile Include="CambioContrasenia.Designer.cs">
       <DependentUpon>CambioContrasenia.cs</DependentUpon>
     </Compile>
-    <Compile Include="CargaPasajeros.cs">
+    <Compile Include="FrmCargaPasajeros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CargaPasajeros.Designer.cs">
-      <DependentUpon>CargaPasajeros.cs</DependentUpon>
+    <Compile Include="FrmCargaPasajeros.Designer.cs">
+      <DependentUpon>FrmCargaPasajeros.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmIngresarEditarPaquete.cs">
       <SubType>Form</SubType>
@@ -207,8 +207,8 @@
     <EmbeddedResource Include="CambioContrasenia.resx">
       <DependentUpon>CambioContrasenia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CargaPasajeros.resx">
-      <DependentUpon>CargaPasajeros.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCargaPasajeros.resx">
+      <DependentUpon>FrmCargaPasajeros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarPaquete.resx">
       <DependentUpon>FrmIngresarEditarPaquete.cs</DependentUpon>

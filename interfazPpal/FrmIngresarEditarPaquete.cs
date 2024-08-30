@@ -1,4 +1,5 @@
-﻿using CapaSesion;
+﻿using CapaNegocio;
+using CapaSesion;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace Loggin
 {
     public partial class FrmIngresarEditarPaquete : Form
     {
+        CN_GuardarPaquete NuevoPaquete = new CN_GuardarPaquete();
         public FrmIngresarEditarPaquete()
         {
             InitializeComponent();
@@ -29,11 +31,17 @@ namespace Loggin
                 CantidadNoches = int.Parse(txtCantidadNoches.Text),
                 Regimen = txtRegimen.Text,
                 Excursion = txtExcursion.Text,
-                ProveedorHotel=txtProveedorHotel.Text,
+                ProveedorHotel = txtProveedorHotel.Text,
 
 
 
             };
+            NuevoPaquete.GuardarPaqueteL(paquete);
+
+        }
+
+        private void label15_Click(object sender, EventArgs e)
+        {
 
         }
     }

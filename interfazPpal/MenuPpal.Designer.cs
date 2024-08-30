@@ -199,6 +199,7 @@
             this.ingresarEditarPasajeroToolStripMenuItem.Name = "ingresarEditarPasajeroToolStripMenuItem";
             this.ingresarEditarPasajeroToolStripMenuItem.Size = new System.Drawing.Size(249, 26);
             this.ingresarEditarPasajeroToolStripMenuItem.Text = "Ingresar/Editar Pasajero";
+            this.ingresarEditarPasajeroToolStripMenuItem.Click += new System.EventHandler(this.ingresarEditarPasajeroToolStripMenuItem_Click);
             // 
             // darDeBajaPasajeroToolStripMenuItem
             // 
@@ -527,13 +528,13 @@
             // mantenimientoToolStripMenuItem
             // 
             this.mantenimientoToolStripMenuItem.Name = "mantenimientoToolStripMenuItem";
-            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.mantenimientoToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.mantenimientoToolStripMenuItem.Text = "Mantenimiento";
             // 
             // usuariosToolStripMenuItem1
             // 
             this.usuariosToolStripMenuItem1.Name = "usuariosToolStripMenuItem1";
-            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(224, 28);
+            this.usuariosToolStripMenuItem1.Size = new System.Drawing.Size(211, 28);
             this.usuariosToolStripMenuItem1.Text = "Usuarios";
             this.usuariosToolStripMenuItem1.Click += new System.EventHandler(this.usuariosToolStripMenuItem1_Click);
             // 
@@ -542,7 +543,7 @@
             this.seguridadToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.preguntasSeguridadToolStripMenuItem});
             this.seguridadToolStripMenuItem.Name = "seguridadToolStripMenuItem";
-            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.seguridadToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.seguridadToolStripMenuItem.Text = "Seguridad";
             // 
             // preguntasSeguridadToolStripMenuItem
@@ -555,7 +556,7 @@
             // altaUsuariosToolStripMenuItem
             // 
             this.altaUsuariosToolStripMenuItem.Name = "altaUsuariosToolStripMenuItem";
-            this.altaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.altaUsuariosToolStripMenuItem.Size = new System.Drawing.Size(211, 28);
             this.altaUsuariosToolStripMenuItem.Text = "Alta usuarios";
             this.altaUsuariosToolStripMenuItem.Click += new System.EventHandler(this.altaUsuariosToolStripMenuItem_Click);
             // 
@@ -571,7 +572,7 @@
             this.menuContenedor.Controls.Add(this.statusStrip1);
             this.menuContenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.menuContenedor.Location = new System.Drawing.Point(0, 31);
-            this.menuContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.menuContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.menuContenedor.Name = "menuContenedor";
             this.menuContenedor.Size = new System.Drawing.Size(1547, 756);
             this.menuContenedor.TabIndex = 1;
@@ -621,7 +622,7 @@
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuPpal";
             this.Text = "Sistema de Reservas Viajando";
             this.Load += new System.EventHandler(this.Form2_Load);

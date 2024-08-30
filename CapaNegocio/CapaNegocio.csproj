@@ -50,6 +50,7 @@
     <Compile Include="CN_TraerPreguntasYRespuestas.cs" />
     <Compile Include="CN_Usuario.cs" />
     <Compile Include="CN_ValidarUsuario.cs" />
+    <Compile Include="Paquete.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

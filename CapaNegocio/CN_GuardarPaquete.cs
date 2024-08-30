@@ -12,25 +12,22 @@ namespace CapaNegocio
     // y luego los envia a la capa de datos para guardarlos en la base de datos
     public class CN_GuardarPaquete
     {
-        CD_GuardarPaquete paquete = new CD_GuardarPaquete();
+        CD_GuardarPaquete paqueteD = new CD_GuardarPaquete();
         private List<Paquete> nuevoPaquete = new List<Paquete>();
 
-        public void AgregarPaquete (Paquete paquete)
+/*public void AgregarPaquete (Paquete paquete)
         {
             nuevoPaquete.Add(paquete);           
-        }
+        }*/
         public void GuardarPaqueteL(Paquete paquete)
         {
-            
-           // paquete.GuardarPaquete(paquete);
+            //paqueteD.GuardarPaqueteD(paquete);
         }
 
-
-
-        public List<Paquete> EditarPaquete()
+        /*public List<Paquete> EditarPaquete()
         {
             return nuevoPaquete;
-        }
+        }*/
 
     }
 }
