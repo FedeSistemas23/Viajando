@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Usuario.cs" />
+    <Compile Include="CN_Nuevo_Usuario.cs" />
     <Compile Include="CN_GuardarPaquete.cs" />
     <Compile Include="CN_EditarPassword.cs" />
     <Compile Include="CN_EnviaDigitoVerificador.cs" />
@@ -50,7 +50,7 @@
     <Compile Include="CN_GuardarPrimerIngreso.cs" />
     <Compile Include="CN_TraerPreguntasYRespuestas.cs" />
     <Compile Include="CN_Usuario.cs" />
-    <Compile Include="AltaUsuario\CN_Alta_Usuario.cs" />
+    <Compile Include="CN_Alta_Usuario.cs" />
     <Compile Include="CN_ValidarUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -710,6 +710,11 @@
             // 
             // npdVenceCada
             // 
+            this.npdVenceCada.AllowDrop = true;
+            this.npdVenceCada.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.npdVenceCada.AutoSize = true;
             this.npdVenceCada.Location = new System.Drawing.Point(188, 11);
             this.npdVenceCada.Name = "npdVenceCada";
             this.npdVenceCada.Size = new System.Drawing.Size(43, 20);

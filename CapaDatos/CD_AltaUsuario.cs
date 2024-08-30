@@ -17,7 +17,7 @@ namespace CapaDatos
         Conexion conexion = new Conexion();
         SqlCommand cmd = new SqlCommand();
 
-        public void AltaUsuarioD (Usuario usuario)
+        public void AltaUsuarioD (CN_Nuevo_Usuario usuario)
         {
             try
             {

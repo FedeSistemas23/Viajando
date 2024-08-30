@@ -9,10 +9,10 @@ namespace CapaNegocio.CN_usuarios
 {
     public class CN_Alta_Usuario
     {
-        CD_AltaUsuario AltaUsuarioL = new CD_AltaUsuario();
-        public void AñadirAtributos(Usuario usuario)
+        CD_AltaUsuario usuarioD = new CD_AltaUsuario();
+        public void AñadirAtributos(CN_Nuevo_Usuario usuario)
         {
-            AltaUsuarioL.AltaUsuarioD(usuario);
+            usuarioD.AltaUsuarioD(usuario);
         }
     }
 }
