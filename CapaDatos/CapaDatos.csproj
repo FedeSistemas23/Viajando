@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CD_AltaUsuario.cs" />
     <Compile Include="CD_EditarPassword.cs" />
     <Compile Include="CD_GuardaDigito.cs" />
     <Compile Include="CD_GuardaRespuestas.cs" />
