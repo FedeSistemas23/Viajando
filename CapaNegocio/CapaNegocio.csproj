@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CNusuario.cs" />
     <Compile Include="CN_GuardarPaquete.cs" />
     <Compile Include="CN_EditarPassword.cs" />
     <Compile Include="CN_EnviaDigitoVerificador.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="CN_GuardarPrimerIngreso.cs" />
     <Compile Include="CN_TraerPreguntasYRespuestas.cs" />
     <Compile Include="CN_Usuario.cs" />
+    <Compile Include="CN_Usuarios_Sistema.cs" />
     <Compile Include="CN_ValidarUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
