@@ -29,7 +29,11 @@ namespace Loggin
             string pass = Aleatorios.Armar();
             string concatenados = pass + txtNombreUsuario.Text;
             string hasheo = Seguridad.SHA256(concatenados);
+<<<<<<< HEAD
             AtributosUsuario NuevoUsuario = new AtributosUsuario()
+=======
+            CN_Nuevo_Usuario NuevoUsuario = new CN_Nuevo_Usuario()
+>>>>>>> 07b1e3b662095515a706efd4e52b4d56a011117a
             {
                 Username = txtNombreUsuario.Text,
                 nombre = txtNombre.Text,

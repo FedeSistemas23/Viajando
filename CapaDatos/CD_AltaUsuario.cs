@@ -17,7 +17,11 @@ namespace CapaDatos
         Conexion conexion = new Conexion();
         SqlCommand cmd = new SqlCommand();
 
+<<<<<<< HEAD
         public void AltaUsuarioD (AtributosUsuario usuario)
+=======
+        public void AltaUsuarioD (CN_Nuevo_Usuario usuario)
+>>>>>>> 07b1e3b662095515a706efd4e52b4d56a011117a
         {
             try
             {
