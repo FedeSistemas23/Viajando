@@ -95,7 +95,7 @@ namespace CapaDatos
                     {
                        
                         CS_Usuario.intentos = leer.GetInt32(leer.GetOrdinal("IntentosFallidos"));
-                        CS_Usuario.bloqueadoHasta = leer.GetDateTime(leer.GetOrdinal("BloqueadoHasta"));
+                       // CS_Usuario.bloqueadoHasta = leer.GetDateTime(leer.GetOrdinal("BloqueadoHasta"));
                         //CS_Usuario.FechaPrimerIngreso = leer.GetDateTime(leer.GetOrdinal("FechaPrimerIngreso"));
                     }
                 }

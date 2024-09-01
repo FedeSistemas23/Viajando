@@ -17,7 +17,7 @@ namespace CapaSesion
         public static string familia { get; set; }
         public static string email { get; set; }
         public static int intentos { get; set; }
-        public static DateTime bloqueadoHasta { get; set; }
+        public static bool bloqueadoHasta { get; set; }
         public static DateTime fechaPrimerIngreso { get; set; }
         public static DateTime fechaUltimoCambio { get; set; }
         public static int venceCada { get; set; }

@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CapaNegocio;
-using CapaNegocio.CN_usuarios;
+
 
 
 
@@ -30,10 +30,14 @@ namespace Loggin
             string concatenados = pass + txtNombreUsuario.Text;
             string hasheo = Seguridad.SHA256(concatenados);
 <<<<<<< HEAD
+<<<<<<< HEAD
             AtributosUsuario NuevoUsuario = new AtributosUsuario()
 =======
             CN_Nuevo_Usuario NuevoUsuario = new CN_Nuevo_Usuario()
 >>>>>>> 07b1e3b662095515a706efd4e52b4d56a011117a
+=======
+            AtributosUsuario NuevoUsuario = new AtributosUsuario()
+>>>>>>> Alta Usuario
             {
                 Username = txtNombreUsuario.Text,
                 nombre = txtNombre.Text,
@@ -45,7 +49,7 @@ namespace Loggin
                 Celular = txtCelular.Text,
                 Calle = txtCalle.Text,
                 NumCalle = txtNumCalle.Text,
-                Barrio = txtBarrio.Text,
+                //Barrio = txtBarrio.Text,
                 password = pass,
                 digito = CreaDigitoVerificador.Calcular(hasheo),
                 familia = int.Parse(cmbFamilias.SelectedItem.ToString()),

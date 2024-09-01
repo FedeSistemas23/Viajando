@@ -16,7 +16,7 @@ namespace interfazLogin
 {
     public partial class FrmPreguntasSeguridad : Form
     {
-        CN_Usuario usuario = new CN_Usuario();
+        CN_TrarPreguntasAleatorios usuario = new CN_TrarPreguntasAleatorios();
         CN_ValidarUsuario validarUsuario = new CN_ValidarUsuario();
         CN_TraerPreguntasYRespuestas pregYresp = new CN_TraerPreguntasYRespuestas();
         CN_EditarPassword editarPass = new CN_EditarPassword();

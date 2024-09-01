@@ -8,6 +8,8 @@ using System.Data.SqlClient;
 using CapaServicios;
 using System.Security.Policy;
 using System.Threading;
+using CapaSesion;
+
 
 
 namespace CapaDatos
@@ -18,10 +20,14 @@ namespace CapaDatos
         SqlCommand cmd = new SqlCommand();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         public void AltaUsuarioD (AtributosUsuario usuario)
 =======
         public void AltaUsuarioD (CN_Nuevo_Usuario usuario)
 >>>>>>> 07b1e3b662095515a706efd4e52b4d56a011117a
+=======
+        public void AltaUsuarioD (AtributosUsuario usuario)
+>>>>>>> Alta Usuario
         {
             try
             {
@@ -32,19 +38,19 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@Nombre", usuario.nombre);
                 cmd.Parameters.AddWithValue("@Apellido", usuario.Apellidos);
                 cmd.Parameters.AddWithValue("@Email", usuario.email);
-                cmd.Parameters.AddWithValue("@TipoDocumento", usuario.TipoDocumento);
-                cmd.Parameters.AddWithValue("@NumDocumento", usuario.NumDocumento);
+                cmd.Parameters.AddWithValue("@Tipo_Doc", usuario.TipoDocumento);
+                cmd.Parameters.AddWithValue("@Num_iden", usuario.NumDocumento);
                 cmd.Parameters.AddWithValue("@Telefono", usuario.Telefono);
                 cmd.Parameters.AddWithValue("@Celular", usuario.Celular);
                 cmd.Parameters.AddWithValue("@Calle", usuario.Calle);
-                cmd.Parameters.AddWithValue("@NumCalle", usuario.NumCalle);
-                cmd.Parameters.AddWithValue("@Barrio", usuario.Barrio);
-                cmd.Parameters.AddWithValue("@password", usuario.password);
-                cmd.Parameters.AddWithValue("@digito", usuario.digito);
-                cmd.Parameters.AddWithValue("@familia", usuario.familia);
-                cmd.Parameters.AddWithValue("@intentos", usuario.intentos);
-                cmd.Parameters.AddWithValue("@venceCada", usuario.VenceCAda);
-                cmd.Parameters.AddWithValue("@Bloqueado", usuario.Bloqueado);
+                cmd.Parameters.AddWithValue("@Num", usuario.NumCalle);
+                //cmd.Parameters.AddWithValue("@Barrio", usuario.Barrio);
+                cmd.Parameters.AddWithValue("@Pass", usuario.password);
+                cmd.Parameters.AddWithValue("@Digito", usuario.digito);
+                cmd.Parameters.AddWithValue("@Id_Flia", usuario.id_flia);
+                cmd.Parameters.AddWithValue("@IntentosFallidos", usuario.intentos);
+                cmd.Parameters.AddWithValue("@VenceCada", usuario.venceCada);
+                cmd.Parameters.AddWithValue("@BloqueadoHasta", usuario.Bloqueado);
                 
                 cmd.ExecuteNonQuery();
             }

@@ -25,7 +25,7 @@ namespace interfazLogin
         MenuPpal menu1 = new MenuPpal();
         CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();        
         CN_ValidarUsuario validarusuario = new CN_ValidarUsuario();
-        CN_Usuario usuario = new CN_Usuario();
+        CN_TrarPreguntasAleatorios usuario = new CN_TrarPreguntasAleatorios();
         public FrmLogin1()
         {
             InitializeComponent();
@@ -99,10 +99,11 @@ namespace interfazLogin
          Validar que las letras sean minusculas
         // no esta discriminando de mayusculas y minusculas         
          */
-        interfazPpal.Menu menu = new interfazPpal.Menu();
+        //interfazPpal.Menu menu = new interfazPpal.Menu();
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
+           
             FrmPreguntasSeguridad frm1 = new FrmPreguntasSeguridad();
             FrmEditarPassword editar = new FrmEditarPassword();
             FrmPrimerIngreso frmPrimerIngreso = new FrmPrimerIngreso();
@@ -111,7 +112,7 @@ namespace interfazLogin
             string userpass = username + password;
             string hasheo2 = Seguridad.SHA256(userpass);
             int digito = CreaDigitoVerificador.Calcular(hasheo2);
-            interfazPpal.Menu menu = new interfazPpal.Menu();
+            //interfazPpal.Menu menu = new interfazPpal.Menu();
             
             if (txtUsuario.Text != "Ej.: ejemplo@gmail.com")
             {
@@ -120,7 +121,7 @@ namespace interfazLogin
                     bool userexist = validarusuario.ValidarUsuarioL(username);
                     if (userexist)
                     {
-                        if (hasheo2 == CS_Usuario.password/*&& digito== CS_usuario.digito*/)
+                        if (hasheo2 == CS_Usuario.password)// && digito == CS_Usuario.digito)
                         {
                             if (CS_Usuario.fechaPrimerIngreso == DateTime.Now)
                             {
@@ -135,17 +136,16 @@ namespace interfazLogin
                                 menu1.Show();
                             }
                         }
-                        //else if (frm1.aleatorio == txtPass.Text)
-                        /*{
+                        else
+                        {
                             MessageBox.Show("La contraseña es incorrecta. Ingrese de nuevo la contraseña:");
                             txtPass.Focus();
-                            int intentos = CS_Usuario.intentos++;
-                            CS_Usuario.intentos = intentos;
-                            if (CS_Usuario.intentos == 3)
+                            
+                            if (CS_Usuario.intentos == 0)
                             {
                                 MessageBox.Show("El usuario ha sido bloqueado");
                             }
-                        }*/
+                        }
                     }
                     else
                     {

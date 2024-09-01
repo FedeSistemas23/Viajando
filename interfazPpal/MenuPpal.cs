@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 
+
 namespace Loggin
 {
     public partial class MenuPpal : Form
@@ -213,5 +214,11 @@ namespace Loggin
         {
 
         }
+
+        private void seguridadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //FrmPreguntasSeguridad preguntas = new FrmPreguntasSeguridad();
+        }
+
     }
 }
