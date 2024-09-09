@@ -18,7 +18,7 @@ namespace interfazPpal
             {
                 lblCAntidadAsientos.Visible = false;
                 lblTIpoDeAsiento.Visible = false;
-                npdCantidadAsientos.Visible=false;
+                npdCantidadAsientos.Visible = false;
                 chbCama.Visible = false;
                 chbSemicama.Visible = false;
                 chbSuites.Visible = false;

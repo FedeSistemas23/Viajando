@@ -1,17 +1,12 @@
 ﻿using CapaDatos;
 using CapaSesion;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
-    // Esta clase agrega en una lista, los datos provenientes del formulario de Ingresar Paquete
-    // y luego los envia a la capa de datos para guardarlos en la base de datos
+
     public class CN_GuardarPaquete
     {
+<<<<<<< HEAD
         CD_GuardarPaquete paqueteD = new CD_GuardarPaquete();
         private List<Paquete> nuevoPaquete = new List<Paquete>();
 
@@ -29,5 +24,13 @@ namespace CapaNegocio
             return nuevoPaquete;
         }*/
 
+=======
+        CD_GuardarPaquete paquete = new CD_GuardarPaquete();
+
+        public void GuardarPaqueteL(CS_Paquete paquete)
+        {
+            paquete.GuardarPaqueteD(paquete);
+        }
+>>>>>>> 99cambios
     }
 }

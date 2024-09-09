@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CapaSesion;
 using System.Data;
-using CapaSesion;
-using CapaServicios;
+using System.Data.SqlClient;
 
 namespace CapaDatos
 {
@@ -20,7 +14,7 @@ namespace CapaDatos
         public void GuardarRespuestas()
         {
             string[] respuesta = new string[3];
-            for (int i = 0; i <=1; i++)
+            for (int i = 0; i <= 1; i++)
             {
                 respuesta[0] = CS_GuardaPreguntasRespuestas.respuesta1;
                 respuesta[1] = CS_GuardaPreguntasRespuestas.respuesta2;
@@ -46,7 +40,7 @@ namespace CapaDatos
                 cmd.Parameters.Clear();
                 conexion.CerrarConexion();
             }
-            
+
         }
     }
 }

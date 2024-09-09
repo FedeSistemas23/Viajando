@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Loggin;
+using System;
 using System.Windows.Forms;
 
 namespace interfazPpal
@@ -15,6 +9,17 @@ namespace interfazPpal
         public FrmBuscarPaquete()
         {
             InitializeComponent();
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReservar_Click(object sender, EventArgs e)
+        {
+            CrearReserva frm = new CrearReserva();
+            frm.ShowDialog();
         }
     }
 }

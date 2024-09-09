@@ -10,19 +10,19 @@ namespace interfazPpal
             if (a == 0)
             {
                 btnEliminar.Enabled = false;
-                
+
             }
         }
         public FrmPagoRecibidos(int b, int a)
         {
             InitializeComponent();
-            if (b == 1 && a==1)
+            if (b == 1 && a == 1)
             {
                 btnGuardar.Enabled = false;
                 btnEliminar.Enabled = true;
                 btnEditar.Enabled = false;
                 btnBuscarPago.Enabled = true;
-               
+
             }
         }
 
@@ -40,6 +40,11 @@ namespace interfazPpal
         {
             FrmBuscarReserva reserva = new FrmBuscarReserva();
             reserva.Show();
+        }
+
+        private void FrmPagoRecibidos_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

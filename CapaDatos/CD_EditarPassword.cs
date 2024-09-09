@@ -17,9 +17,9 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Password", pass);
                 cmd.Parameters.AddWithValue("@Username", username);
-                cmd.ExecuteNonQuery();                
+                cmd.ExecuteNonQuery();
             }
-            catch  (Exception ex)          
+            catch (Exception ex)
             {
                 throw new Exception("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
             }
@@ -29,6 +29,6 @@ namespace CapaDatos
                 conexion.CerrarConexion();
             }
         }
-        
+
     }
 }

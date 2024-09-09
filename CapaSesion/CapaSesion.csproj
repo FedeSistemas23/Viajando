@@ -41,10 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtributosUsuario.cs" />
     <Compile Include="CS_PregRespSeg.cs" />
     <Compile Include="CS_Usuario.cs" />
     <Compile Include="CS_GuardaPreguntasRespuestas.cs" />
+<<<<<<< HEAD
+=======
+    <Compile Include="Contrasenia\MasterValidar.cs" />
+    <Compile Include="CS_VencimientoPassword.cs" />
+    <Compile Include="CS_Paquete.cs" />
+>>>>>>> 99cambios
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Contrasenia\Validar8.cs" />
+    <Compile Include="Contrasenia\ValidarDigito.cs" />
+    <Compile Include="Contrasenia\ValidarEspecial.cs" />
+    <Compile Include="Contrasenia\ValidarMayus.cs" />
+    <Compile Include="Contrasenia\ValidarMinus.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

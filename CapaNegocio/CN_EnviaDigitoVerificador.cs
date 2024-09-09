@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaServicios;
-using CapaSesion;
-using CapaDatos;
+﻿using CapaDatos;
 
 namespace CapaNegocio
 {
@@ -16,7 +9,7 @@ namespace CapaNegocio
 
         public void EnviarDigito()
         {
-           // digitoVerificador.GuardarDigito(dig);
+            // digitoVerificador.GuardarDigito(dig);
         }
     }
 }

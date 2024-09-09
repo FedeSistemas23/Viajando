@@ -41,11 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CD_AltaUsuario.cs" />
     <Compile Include="CD_EditarPassword.cs" />
     <Compile Include="CD_GuardaDigito.cs" />
     <Compile Include="CD_GuardaRespuestas.cs" />
     <Compile Include="CD_GuardarPaquete.cs" />
     <Compile Include="CD_GuardarPrimerIngreso.cs" />
+    <Compile Include="CD_IntentosFallidos.cs" />
     <Compile Include="CD_TraePreguntasYRespuestas.cs" />
     <Compile Include="CD_ValidarPassword.cs" />
     <Compile Include="CD_ValidarUsuario.cs" />

@@ -70,6 +70,12 @@
     <Compile Include="FrmCargaPasajeros.Designer.cs">
       <DependentUpon>FrmCargaPasajeros.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearReserva.Designer.cs">
+      <DependentUpon>CrearReserva.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIngresarEditarPaquete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,12 +87,6 @@
     </Compile>
     <Compile Include="FrmIngresarEditarReseerva.Designer.cs">
       <DependentUpon>FrmIngresarEditarReseerva.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Disponibilidad.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Disponibilidad.Designer.cs">
-      <DependentUpon>Disponibilidad.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmBuscarCoordinador.cs">
       <SubType>Form</SubType>
@@ -210,14 +210,14 @@
     <EmbeddedResource Include="FrmCargaPasajeros.resx">
       <DependentUpon>FrmCargaPasajeros.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrearReserva.resx">
+      <DependentUpon>CrearReserva.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarPaquete.resx">
       <DependentUpon>FrmIngresarEditarPaquete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarReseerva.resx">
       <DependentUpon>FrmIngresarEditarReseerva.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Disponibilidad.resx">
-      <DependentUpon>Disponibilidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmBuscarCoordinador.resx">
       <DependentUpon>FrmBuscarCoordinador.cs</DependentUpon>

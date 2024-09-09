@@ -1,11 +1,7 @@
 ﻿using CapaSesion;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaDatos
 {
@@ -14,7 +10,11 @@ namespace CapaDatos
         SqlCommand cmd = new SqlCommand();
         Conexion conexion = new Conexion();
 
+<<<<<<< HEAD
         /*public void GuardarPaqueteD(Paquete paquete)
+=======
+        public void GuardarPaqueteD(CS_Paquete paquete)
+>>>>>>> 99cambios
         {
             try
             {
@@ -27,16 +27,22 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@CantidadDias", paquete.CantidadDias);
                 cmd.Parameters.AddWithValue("@CantidadNoches", paquete.CantidadNoches);
                 cmd.Parameters.AddWithValue("@Regimen", paquete.Regimen);
-                cmd.Parameters.AddWithValue("@Excursion", paquete.Excursion);
                 cmd.Parameters.AddWithValue("@ProveedorHotel", paquete.ProveedorHotel);
+                cmd.Parameters.AddWithValue("@Single", paquete.Single);
+                cmd.Parameters.AddWithValue("@Doble", paquete.Doble);
+                cmd.Parameters.AddWithValue("@Triple", paquete.Triple);
+                cmd.Parameters.AddWithValue("@Cuadruple", paquete.Cuadruple);
                 cmd.Parameters.AddWithValue("@ProveedorBus", paquete.ProveedorBus);
+                cmd.Parameters.AddWithValue("@Semicamas", paquete.Semicamas);
+                cmd.Parameters.AddWithValue("@Camas", paquete.Camas);
                 cmd.Parameters.AddWithValue("@GastosAdministrativos", paquete.GastosAdministrativos);
                 cmd.Parameters.AddWithValue("@PrecioLista", paquete.PrecioLista);
                 cmd.Parameters.AddWithValue("@PrecioEfectivo", paquete.PrecioEfectivo);
                 cmd.Parameters.AddWithValue("@Descuento", paquete.Descuento);
                 cmd.Parameters.AddWithValue("@Disponibilidad", paquete.Disponibilidad);
                 cmd.ExecuteNonQuery();
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
             }

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+<<<<<<< HEAD
             this.txtAdicionalCama = new System.Windows.Forms.TextBox();
             this.lblAdicionalCama = new System.Windows.Forms.Label();
             this.npdDisponibilidad = new System.Windows.Forms.NumericUpDown();
@@ -46,35 +47,56 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.btnBuscarBuses = new System.Windows.Forms.Button();
             this.btnBuscarHotel = new System.Windows.Forms.Button();
+=======
+            this.label1 = new System.Windows.Forms.Label();
+            this.npdCamas = new System.Windows.Forms.NumericUpDown();
+            this.npdSemicamas = new System.Windows.Forms.NumericUpDown();
+            this.npdSingle = new System.Windows.Forms.NumericUpDown();
+            this.npdCantidadNoches = new System.Windows.Forms.NumericUpDown();
+            this.npdCantidadDias = new System.Windows.Forms.NumericUpDown();
+            this.npdTriple = new System.Windows.Forms.NumericUpDown();
+            this.npdCuadruple = new System.Windows.Forms.NumericUpDown();
+            this.npdDoble = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.dtpFechaSalida = new System.Windows.Forms.DateTimePicker();
+            this.lblFechaSalida = new System.Windows.Forms.Label();
+            this.rtbObservaciones = new System.Windows.Forms.RichTextBox();
+>>>>>>> 99cambios
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtPrecioEfectivo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtPrecioLista = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtGastosAdministrativos = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.txtExcursion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblTransporte = new System.Windows.Forms.Label();
+=======
+            this.label5 = new System.Windows.Forms.Label();
+>>>>>>> 99cambios
             this.txtRegimen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtProveedorHotel = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCantidadNoches = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblCantidadNoches = new System.Windows.Forms.Label();
             this.txtDestino = new System.Windows.Forms.TextBox();
             this.lblDestino = new System.Windows.Forms.Label();
-            this.txtCantidadDias = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblCantidadDias = new System.Windows.Forms.Label();
             this.dtpFechaRegreso = new System.Windows.Forms.DateTimePicker();
             this.lblFechaRegreso = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnCrear = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+<<<<<<< HEAD
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lblCantidadHabitaciones = new System.Windows.Forms.Label();
@@ -89,11 +111,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.npdDisponibilidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.npdAsientosSemicama)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.npdAsientosCama)).BeginInit();
+=======
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.cmbHoteles = new System.Windows.Forms.ComboBox();
+            this.cmbBuses = new System.Windows.Forms.ComboBox();
+            this.lblDisponibilidad = new System.Windows.Forms.Label();
+            this.npdDisponibilidad = new System.Windows.Forms.NumericUpDown();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCamas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdSemicamas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdSingle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCantidadNoches)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCantidadDias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdTriple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCuadruple)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdDoble)).BeginInit();
+>>>>>>> 99cambios
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdDisponibilidad)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+<<<<<<< HEAD
             this.groupBox1.Controls.Add(this.lblCantCuadruples);
             this.groupBox1.Controls.Add(this.lblCuadruples);
             this.groupBox1.Controls.Add(this.lblCantTriples);
@@ -113,44 +154,72 @@
             this.groupBox1.Controls.Add(this.lblNombreBus);
             this.groupBox1.Controls.Add(this.lblAsientosCama);
             this.groupBox1.Controls.Add(this.comboBox1);
+=======
+            this.groupBox1.Controls.Add(this.npdDisponibilidad);
+            this.groupBox1.Controls.Add(this.lblDisponibilidad);
+            this.groupBox1.Controls.Add(this.cmbBuses);
+            this.groupBox1.Controls.Add(this.cmbHoteles);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.npdCamas);
+            this.groupBox1.Controls.Add(this.npdSemicamas);
+            this.groupBox1.Controls.Add(this.npdSingle);
+            this.groupBox1.Controls.Add(this.npdCantidadNoches);
+            this.groupBox1.Controls.Add(this.npdCantidadDias);
+            this.groupBox1.Controls.Add(this.npdTriple);
+            this.groupBox1.Controls.Add(this.npdCuadruple);
+            this.groupBox1.Controls.Add(this.npdDoble);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label11);
+>>>>>>> 99cambios
             this.groupBox1.Controls.Add(this.dtpFechaSalida);
             this.groupBox1.Controls.Add(this.lblFechaSalida);
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Controls.Add(this.btnBuscarBuses);
-            this.groupBox1.Controls.Add(this.btnBuscarHotel);
+            this.groupBox1.Controls.Add(this.rtbObservaciones);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox9);
+            this.groupBox1.Controls.Add(this.txtDescuento);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.txtPrecioEfectivo);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.txtPrecioLista);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtGastosAdministrativos);
             this.groupBox1.Controls.Add(this.label7);
+<<<<<<< HEAD
             this.groupBox1.Controls.Add(this.txtExcursion);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.lblTransporte);
+=======
+            this.groupBox1.Controls.Add(this.label5);
+>>>>>>> 99cambios
             this.groupBox1.Controls.Add(this.txtRegimen);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.txtProveedorHotel);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtCantidadNoches);
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.lblCantidadNoches);
             this.groupBox1.Controls.Add(this.txtDestino);
             this.groupBox1.Controls.Add(this.lblDestino);
-            this.groupBox1.Controls.Add(this.txtCantidadDias);
-            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.lblCantidadDias);
             this.groupBox1.Controls.Add(this.dtpFechaRegreso);
             this.groupBox1.Controls.Add(this.lblFechaRegreso);
+<<<<<<< HEAD
             this.groupBox1.Location = new System.Drawing.Point(61, 15);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1284, 364);
+=======
+            this.groupBox1.Location = new System.Drawing.Point(59, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(1215, 364);
+>>>>>>> 99cambios
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Crear Nuevo Paquete";
             // 
+<<<<<<< HEAD
             // txtAdicionalCama
             // 
             this.txtAdicionalCama.Location = new System.Drawing.Point(1079, 142);
@@ -250,6 +319,127 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 24);
             this.comboBox1.TabIndex = 99;
+=======
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(393, 267);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 16);
+            this.label1.TabIndex = 114;
+            this.label1.Text = "Butacas Camas";
+            // 
+            // npdCamas
+            // 
+            this.npdCamas.Location = new System.Drawing.Point(552, 261);
+            this.npdCamas.Name = "npdCamas";
+            this.npdCamas.Size = new System.Drawing.Size(120, 22);
+            this.npdCamas.TabIndex = 113;
+            // 
+            // npdSemicamas
+            // 
+            this.npdSemicamas.Location = new System.Drawing.Point(552, 233);
+            this.npdSemicamas.Name = "npdSemicamas";
+            this.npdSemicamas.Size = new System.Drawing.Size(120, 22);
+            this.npdSemicamas.TabIndex = 112;
+            // 
+            // npdSingle
+            // 
+            this.npdSingle.Location = new System.Drawing.Point(537, 68);
+            this.npdSingle.Margin = new System.Windows.Forms.Padding(4);
+            this.npdSingle.Name = "npdSingle";
+            this.npdSingle.Size = new System.Drawing.Size(56, 22);
+            this.npdSingle.TabIndex = 111;
+            // 
+            // npdCantidadNoches
+            // 
+            this.npdCantidadNoches.Location = new System.Drawing.Point(195, 188);
+            this.npdCantidadNoches.Name = "npdCantidadNoches";
+            this.npdCantidadNoches.Size = new System.Drawing.Size(49, 22);
+            this.npdCantidadNoches.TabIndex = 110;
+            // 
+            // npdCantidadDias
+            // 
+            this.npdCantidadDias.Location = new System.Drawing.Point(195, 153);
+            this.npdCantidadDias.Name = "npdCantidadDias";
+            this.npdCantidadDias.Size = new System.Drawing.Size(49, 22);
+            this.npdCantidadDias.TabIndex = 109;
+            // 
+            // npdTriple
+            // 
+            this.npdTriple.Location = new System.Drawing.Point(537, 132);
+            this.npdTriple.Margin = new System.Windows.Forms.Padding(4);
+            this.npdTriple.Name = "npdTriple";
+            this.npdTriple.Size = new System.Drawing.Size(56, 22);
+            this.npdTriple.TabIndex = 108;
+            // 
+            // npdCuadruple
+            // 
+            this.npdCuadruple.Location = new System.Drawing.Point(537, 167);
+            this.npdCuadruple.Margin = new System.Windows.Forms.Padding(4);
+            this.npdCuadruple.Name = "npdCuadruple";
+            this.npdCuadruple.Size = new System.Drawing.Size(56, 22);
+            this.npdCuadruple.TabIndex = 107;
+            // 
+            // npdDoble
+            // 
+            this.npdDoble.Location = new System.Drawing.Point(537, 97);
+            this.npdDoble.Margin = new System.Windows.Forms.Padding(4);
+            this.npdDoble.Name = "npdDoble";
+            this.npdDoble.Size = new System.Drawing.Size(56, 22);
+            this.npdDoble.TabIndex = 106;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(391, 173);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(137, 16);
+            this.label16.TabIndex = 105;
+            this.label16.Text = "Habitacion Cuadruple";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(393, 138);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(110, 16);
+            this.label15.TabIndex = 104;
+            this.label15.Text = "Habitacion Triple";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(391, 103);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(110, 16);
+            this.label14.TabIndex = 103;
+            this.label14.Text = "Habitacion doble";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(391, 233);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(131, 16);
+            this.label13.TabIndex = 101;
+            this.label13.Text = "Butacas Semicamas";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(391, 71);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 16);
+            this.label11.TabIndex = 99;
+            this.label11.Text = " Single";
+>>>>>>> 99cambios
             // 
             // dtpFechaSalida
             // 
@@ -269,6 +459,7 @@
             this.lblFechaSalida.TabIndex = 97;
             this.lblFechaSalida.Text = "Fecha \r\nde Salida :";
             // 
+<<<<<<< HEAD
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(152, 303);
@@ -305,6 +496,16 @@
             this.btnBuscarHotel.TabIndex = 95;
             this.btnBuscarHotel.Text = "Buscar";
             this.btnBuscarHotel.UseVisualStyleBackColor = false;
+=======
+            // rtbObservaciones
+            // 
+            this.rtbObservaciones.Location = new System.Drawing.Point(152, 303);
+            this.rtbObservaciones.Margin = new System.Windows.Forms.Padding(4);
+            this.rtbObservaciones.Name = "rtbObservaciones";
+            this.rtbObservaciones.Size = new System.Drawing.Size(883, 53);
+            this.rtbObservaciones.TabIndex = 96;
+            this.rtbObservaciones.Text = "";
+>>>>>>> 99cambios
             // 
             // label12
             // 
@@ -316,71 +517,116 @@
             this.label12.TabIndex = 94;
             this.label12.Text = "Observaciones";
             // 
-            // textBox9
+            // txtDescuento
             // 
+<<<<<<< HEAD
             this.textBox9.Location = new System.Drawing.Point(1079, 112);
             this.textBox9.Margin = new System.Windows.Forms.Padding(4);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(197, 22);
             this.textBox9.TabIndex = 90;
+=======
+            this.txtDescuento.Location = new System.Drawing.Point(973, 127);
+            this.txtDescuento.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(197, 22);
+            this.txtDescuento.TabIndex = 90;
+>>>>>>> 99cambios
             // 
             // label10
             // 
             this.label10.AutoSize = true;
+<<<<<<< HEAD
             this.label10.Location = new System.Drawing.Point(999, 115);
+=======
+            this.label10.Location = new System.Drawing.Point(863, 132);
+>>>>>>> 99cambios
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(72, 16);
             this.label10.TabIndex = 89;
             this.label10.Text = "Descuento";
             // 
-            // textBox8
+            // txtPrecioEfectivo
             // 
+<<<<<<< HEAD
             this.textBox8.Location = new System.Drawing.Point(1079, 82);
             this.textBox8.Margin = new System.Windows.Forms.Padding(4);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(197, 22);
             this.textBox8.TabIndex = 88;
+=======
+            this.txtPrecioEfectivo.Location = new System.Drawing.Point(973, 96);
+            this.txtPrecioEfectivo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioEfectivo.Name = "txtPrecioEfectivo";
+            this.txtPrecioEfectivo.Size = new System.Drawing.Size(197, 22);
+            this.txtPrecioEfectivo.TabIndex = 88;
+>>>>>>> 99cambios
             // 
             // label9
             // 
             this.label9.AutoSize = true;
+<<<<<<< HEAD
             this.label9.Location = new System.Drawing.Point(974, 85);
+=======
+            this.label9.Location = new System.Drawing.Point(863, 101);
+>>>>>>> 99cambios
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(97, 16);
             this.label9.TabIndex = 87;
             this.label9.Text = "Precio Efectivo";
             // 
-            // textBox7
+            // txtPrecioLista
             // 
+<<<<<<< HEAD
             this.textBox7.Location = new System.Drawing.Point(1079, 53);
             this.textBox7.Margin = new System.Windows.Forms.Padding(4);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(197, 22);
             this.textBox7.TabIndex = 86;
+=======
+            this.txtPrecioLista.Location = new System.Drawing.Point(973, 65);
+            this.txtPrecioLista.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPrecioLista.Name = "txtPrecioLista";
+            this.txtPrecioLista.Size = new System.Drawing.Size(197, 22);
+            this.txtPrecioLista.TabIndex = 86;
+>>>>>>> 99cambios
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+<<<<<<< HEAD
             this.label8.Location = new System.Drawing.Point(994, 56);
+=======
+            this.label8.Location = new System.Drawing.Point(863, 70);
+>>>>>>> 99cambios
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 16);
             this.label8.TabIndex = 85;
             this.label8.Text = "Precio Lista";
             // 
-            // textBox6
+            // txtGastosAdministrativos
             // 
+<<<<<<< HEAD
             this.textBox6.Location = new System.Drawing.Point(1079, 23);
             this.textBox6.Margin = new System.Windows.Forms.Padding(4);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(197, 22);
             this.textBox6.TabIndex = 84;
+=======
+            this.txtGastosAdministrativos.Location = new System.Drawing.Point(973, 36);
+            this.txtGastosAdministrativos.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGastosAdministrativos.Name = "txtGastosAdministrativos";
+            this.txtGastosAdministrativos.Size = new System.Drawing.Size(197, 22);
+            this.txtGastosAdministrativos.TabIndex = 84;
+>>>>>>> 99cambios
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+<<<<<<< HEAD
             this.label7.Location = new System.Drawing.Point(939, 26);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -419,6 +665,28 @@
             // txtRegimen
             // 
             this.txtRegimen.Location = new System.Drawing.Point(152, 220);
+=======
+            this.label7.Location = new System.Drawing.Point(863, 42);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(94, 16);
+            this.label7.TabIndex = 83;
+            this.label7.Text = "Gastos Admin.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(393, 206);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 16);
+            this.label5.TabIndex = 79;
+            this.label5.Text = "Transporte";
+            // 
+            // txtRegimen
+            // 
+            this.txtRegimen.Location = new System.Drawing.Point(152, 221);
+>>>>>>> 99cambios
             this.txtRegimen.Margin = new System.Windows.Forms.Padding(4);
             this.txtRegimen.Name = "txtRegimen";
             this.txtRegimen.Size = new System.Drawing.Size(197, 22);
@@ -427,13 +695,18 @@
             // label3
             // 
             this.label3.AutoSize = true;
+<<<<<<< HEAD
             this.label3.Location = new System.Drawing.Point(73, 224);
+=======
+            this.label3.Location = new System.Drawing.Point(49, 224);
+>>>>>>> 99cambios
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 77;
             this.label3.Text = "Régimen";
             // 
+<<<<<<< HEAD
             // txtProveedorHotel
             // 
             this.txtProveedorHotel.Location = new System.Drawing.Point(463, 41);
@@ -446,14 +719,21 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(404, 44);
+=======
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(391, 43);
+>>>>>>> 99cambios
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 16);
             this.label2.TabIndex = 75;
             this.label2.Text = "Hotel";
             // 
-            // txtCantidadNoches
+            // lblCantidadNoches
             // 
+<<<<<<< HEAD
             this.txtCantidadNoches.Location = new System.Drawing.Point(152, 188);
             this.txtCantidadNoches.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidadNoches.Name = "txtCantidadNoches";
@@ -473,6 +753,19 @@
             // txtDestino
             // 
             this.txtDestino.Location = new System.Drawing.Point(152, 124);
+=======
+            this.lblCantidadNoches.AutoSize = true;
+            this.lblCantidadNoches.Location = new System.Drawing.Point(49, 190);
+            this.lblCantidadNoches.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadNoches.Name = "lblCantidadNoches";
+            this.lblCantidadNoches.Size = new System.Drawing.Size(130, 16);
+            this.lblCantidadNoches.TabIndex = 73;
+            this.lblCantidadNoches.Text = "Cantidad de Noches";
+            // 
+            // txtDestino
+            // 
+            this.txtDestino.Location = new System.Drawing.Point(152, 121);
+>>>>>>> 99cambios
             this.txtDestino.Margin = new System.Windows.Forms.Padding(4);
             this.txtDestino.Name = "txtDestino";
             this.txtDestino.Size = new System.Drawing.Size(197, 22);
@@ -481,13 +774,18 @@
             // lblDestino
             // 
             this.lblDestino.AutoSize = true;
+<<<<<<< HEAD
             this.lblDestino.Location = new System.Drawing.Point(73, 128);
+=======
+            this.lblDestino.Location = new System.Drawing.Point(49, 128);
+>>>>>>> 99cambios
             this.lblDestino.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDestino.Name = "lblDestino";
             this.lblDestino.Size = new System.Drawing.Size(53, 16);
             this.lblDestino.TabIndex = 71;
             this.lblDestino.Text = "Destino";
             // 
+<<<<<<< HEAD
             // txtCantidadDias
             // 
             this.txtCantidadDias.Location = new System.Drawing.Point(152, 156);
@@ -505,6 +803,17 @@
             this.label4.Size = new System.Drawing.Size(35, 16);
             this.label4.TabIndex = 69;
             this.label4.Text = "Días";
+=======
+            // lblCantidadDias
+            // 
+            this.lblCantidadDias.AutoSize = true;
+            this.lblCantidadDias.Location = new System.Drawing.Point(49, 155);
+            this.lblCantidadDias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadDias.Name = "lblCantidadDias";
+            this.lblCantidadDias.Size = new System.Drawing.Size(111, 16);
+            this.lblCantidadDias.TabIndex = 69;
+            this.lblCantidadDias.Text = "Cantidad de Días";
+>>>>>>> 99cambios
             // 
             // dtpFechaRegreso
             // 
@@ -524,6 +833,7 @@
             this.lblFechaRegreso.TabIndex = 67;
             this.lblFechaRegreso.Text = "Fecha \r\nde Regreso";
             // 
+<<<<<<< HEAD
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -552,13 +862,47 @@
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+=======
+            // btnCrear
+            // 
+            this.btnCrear.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrear.ForeColor = System.Drawing.Color.White;
+            this.btnCrear.Location = new System.Drawing.Point(717, 421);
+            this.btnCrear.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrear.Name = "btnCrear";
+            this.btnCrear.Size = new System.Drawing.Size(131, 41);
+            this.btnCrear.TabIndex = 95;
+            this.btnCrear.Text = "Crear";
+            this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.btnCrear_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(1143, 421);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(131, 41);
+            this.btnCancelar.TabIndex = 93;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = false;
+>>>>>>> 99cambios
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.CornflowerBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.CornflowerBlue;
+<<<<<<< HEAD
             this.dataGridView1.Location = new System.Drawing.Point(61, 410);
+=======
+            this.dataGridView1.Location = new System.Drawing.Point(59, 469);
+>>>>>>> 99cambios
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -571,6 +915,7 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+<<<<<<< HEAD
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -681,28 +1026,109 @@
             this.lblCantCuadruples.TabIndex = 117;
             this.lblCantCuadruples.Text = "CantCuadruples";
             this.lblCantCuadruples.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+=======
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(865, 421);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(131, 41);
+            this.btnEditar.TabIndex = 91;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(1004, 421);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(131, 41);
+            this.btnEliminar.TabIndex = 92;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // cmbHoteles
+            // 
+            this.cmbHoteles.FormattingEnabled = true;
+            this.cmbHoteles.Location = new System.Drawing.Point(537, 34);
+            this.cmbHoteles.Name = "cmbHoteles";
+            this.cmbHoteles.Size = new System.Drawing.Size(121, 24);
+            this.cmbHoteles.TabIndex = 115;
+            // 
+            // cmbBuses
+            // 
+            this.cmbBuses.FormattingEnabled = true;
+            this.cmbBuses.Location = new System.Drawing.Point(551, 203);
+            this.cmbBuses.Name = "cmbBuses";
+            this.cmbBuses.Size = new System.Drawing.Size(121, 24);
+            this.cmbBuses.TabIndex = 116;
+            // 
+            // lblDisponibilidad
+            // 
+            this.lblDisponibilidad.AutoSize = true;
+            this.lblDisponibilidad.Location = new System.Drawing.Point(49, 261);
+            this.lblDisponibilidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDisponibilidad.Name = "lblDisponibilidad";
+            this.lblDisponibilidad.Size = new System.Drawing.Size(94, 16);
+            this.lblDisponibilidad.TabIndex = 117;
+            this.lblDisponibilidad.Text = "Disponibilidad";
+            // 
+            // npdDisponibilidad
+            // 
+            this.npdDisponibilidad.Location = new System.Drawing.Point(195, 259);
+            this.npdDisponibilidad.Name = "npdDisponibilidad";
+            this.npdDisponibilidad.Size = new System.Drawing.Size(49, 22);
+            this.npdDisponibilidad.TabIndex = 118;
+>>>>>>> 99cambios
             // 
             // FrmIngresarEditarPaquete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1544, 783);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
+=======
+            this.ClientSize = new System.Drawing.Size(1383, 783);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnEditar);
+>>>>>>> 99cambios
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.btnGuardar);
+            this.Controls.Add(this.btnCrear);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmIngresarEditarPaquete";
             this.Text = "CrearPaquete";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.npdDisponibilidad)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.npdAsientosSemicama)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.npdAsientosCama)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.npdCamas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdSemicamas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdSingle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCantidadNoches)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCantidadDias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdTriple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdCuadruple)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdDoble)).EndInit();
+>>>>>>> 99cambios
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.npdDisponibilidad)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -713,39 +1139,39 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox txtDestino;
         private System.Windows.Forms.Label lblDestino;
-        private System.Windows.Forms.TextBox txtCantidadDias;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblCantidadDias;
         private System.Windows.Forms.DateTimePicker dtpFechaRegreso;
-        private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Label lblFechaRegreso;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtPrecioLista;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtGastosAdministrativos;
         private System.Windows.Forms.Label label7;
+<<<<<<< HEAD
         private System.Windows.Forms.TextBox txtExcursion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblTransporte;
+=======
+        private System.Windows.Forms.Label label5;
+>>>>>>> 99cambios
         private System.Windows.Forms.TextBox txtRegimen;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtProveedorHotel;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCantidadNoches;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label lblCantidadNoches;
+        private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtPrecioEfectivo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button btnBuscarBuses;
-        private System.Windows.Forms.Button btnBuscarHotel;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.RichTextBox rtbObservaciones;
+        private System.Windows.Forms.Button btnCrear;
         private System.Windows.Forms.DateTimePicker dtpFechaSalida;
         private System.Windows.Forms.Label lblFechaSalida;
+<<<<<<< HEAD
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label lblAsientosCama;
         private System.Windows.Forms.TextBox txtTransporte;
@@ -765,5 +1191,25 @@
         private System.Windows.Forms.Label lblDoble;
         private System.Windows.Forms.Label lblCantHab;
         public System.Windows.Forms.Label lblCantCuadruples;
+=======
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.NumericUpDown npdTriple;
+        private System.Windows.Forms.NumericUpDown npdCuadruple;
+        private System.Windows.Forms.NumericUpDown npdDoble;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown npdCantidadNoches;
+        private System.Windows.Forms.NumericUpDown npdCantidadDias;
+        private System.Windows.Forms.NumericUpDown npdSingle;
+        private System.Windows.Forms.NumericUpDown npdSemicamas;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown npdCamas;
+        private System.Windows.Forms.ComboBox cmbBuses;
+        private System.Windows.Forms.ComboBox cmbHoteles;
+        private System.Windows.Forms.NumericUpDown npdDisponibilidad;
+        private System.Windows.Forms.Label lblDisponibilidad;
+>>>>>>> 99cambios
     }
 }

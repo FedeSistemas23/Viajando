@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using CapaSesion;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using CapaSesion;
+using System.Windows.Forms;
 
 
 
@@ -23,7 +17,7 @@ namespace interfazPpal
             InitializeComponent();
         }
 
-        
+
 
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -48,16 +42,16 @@ namespace interfazPpal
 
         private void btnMouseLeave(object sender, EventArgs e)
         {
-            
+
             //panel2.Controls.Remove(p);
 
             //if(panel2.Visible)
-              //  panel2.Visible = false;
+            //  panel2.Visible = false;
         }
 
         private void btnMouseLeaveConfig(object sender, EventArgs e)
         {
-            
+
             panelConfiguracion.Controls.Remove(p);
 
             if (panelConfiguracion.Visible)
@@ -66,9 +60,9 @@ namespace interfazPpal
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("¿Esta seguro que quiere cerrar la aplicación?", "warning",
+            if (MessageBox.Show("¿Esta seguro que quiere cerrar la aplicación?", "warning",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
-            Application.Exit();
+                Application.Exit();
         }
 
         private void btnMaxi_Click(object sender, EventArgs e)
@@ -110,31 +104,31 @@ namespace interfazPpal
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 this.Close();
 
-                
-            
+
+
         }
 
 
 
         private void btnPagos_MouseHover(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnPagos_MouseLeave(object sender, EventArgs e)
         {
-            
+
         }
         private void btnReportes_MouseHover(object sender, EventArgs e)
         {
-           
+
         }
 
-       
+
 
         private void btnReservas_MouseHover_1(object sender, EventArgs e)
         {
-           
+
 
         }
         private void btnReservas_MouseLeave(object sender, EventArgs e)
@@ -143,22 +137,22 @@ namespace interfazPpal
 
         private void btnProveedores_MouseHover_1(object sender, EventArgs e)
         {
-           
+
 
         }
         private void btnProveedores_MouseLeave(object sender, EventArgs e)
         {
-           
+
         }
 
         private void btnDestinos_MouseHover_1(object sender, EventArgs e)
         {
-           
+
 
         }
         private void btnVentas_MouseLeave(object sender, EventArgs e)
         {
-        }  
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -168,9 +162,9 @@ namespace interfazPpal
 
         private void CargarDatosUsuario()
         {
-           // lblNombre.Text = CS_Usuario.nombreUsuario;
+            // lblNombre.Text = CS_Usuario.nombreUsuario;
             lblRol.Text = CS_Usuario.familia;
-            
+
         }
 
         private void panelLateral_Paint(object sender, PaintEventArgs e)
@@ -240,8 +234,8 @@ namespace interfazPpal
             {
                 this.WindowState = FormWindowState.Maximized;
 
-                 btnMaxi.Enabled = true;
-                 btnRest.Visible = false;
+                btnMaxi.Enabled = true;
+                btnRest.Visible = false;
             }
         }
 
@@ -268,10 +262,10 @@ namespace interfazPpal
 
             // IMPLEMENTARLA !!!
 
-         // if (!panel2.Visible)
-           //     panel2.Visible = true;
+            // if (!panel2.Visible)
+            //     panel2.Visible = true;
             //else
-              //  panel2.Visible = false;
+            //  panel2.Visible = false;
 
 
             //Usuario frmUsuario= new Usuario();
@@ -290,7 +284,7 @@ namespace interfazPpal
 
         private void btnDestinos_Click(object sender, EventArgs e)
         {
-           
+
 
             AbrirFormDestinos(new GestionAdministratioContable());
 
@@ -302,7 +296,7 @@ namespace interfazPpal
                 this.contendedor.Controls.RemoveAt(0);
             Form frm = formDestinos as Form;
             frm.TopLevel = false;
-            frm.Dock = DockStyle.Fill;  
+            frm.Dock = DockStyle.Fill;
             this.contendedor.Controls.Add(frm);
             this.contendedor.Tag = frm;
             frm.Show();
@@ -324,7 +318,7 @@ namespace interfazPpal
             if (!panelConfiguracion.Visible)
                 panelConfiguracion.Visible = true;
             else
-                panelConfiguracion.Visible = false; 
+                panelConfiguracion.Visible = false;
         }
 
         private void btnReportes_Click(object sender, EventArgs e)
@@ -392,8 +386,8 @@ namespace interfazPpal
 
         private void btnUsuarios_MouseHover(object sender, EventArgs e)
         {
-           // if(!panel2.Visible)
-                //panel2.Visible = true;
+            // if(!panel2.Visible)
+            //panel2.Visible = true;
         }
     }
 }

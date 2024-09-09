@@ -41,9 +41,9 @@ namespace Loggin
         }
         private void altaUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Alta_de_Usuarios form= new Alta_de_Usuarios();
-            form.ShowDialog();
-          //  AbrirFormuEnPanelMenu(formAlta);
+            Alta_de_Usuarios form = new Alta_de_Usuarios();
+            // form.Show();
+            AbrirFormuEnPanelMenu(form);
 
             //Alta_de_Usuarios frm = new Alta_de_Usuarios();
             //nuContenedor.Show();
@@ -51,7 +51,7 @@ namespace Loggin
 
         private void preguntasSeguridadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+
 
 
         }
@@ -83,8 +83,6 @@ namespace Loggin
 
         private void editarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Disponibilidad frm = new Disponibilidad();
-            AbrirFormuEnPanelMenu(frm);
         }
 
         private void resultadosComercialesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -106,7 +104,7 @@ namespace Loggin
 
         private void ingresarEditarPagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(0);
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1, 1);
             pagoRecibidos.Show();
         }
 
@@ -135,7 +133,7 @@ namespace Loggin
 
         private void pagosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(0);
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1, 1);
             pagoRecibidos.Show();
         }
 
@@ -165,7 +163,7 @@ namespace Loggin
 
         private void busesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor(0,1);
+            FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor(0, 1);
             proveedor.Show();
         }
 
@@ -178,7 +176,8 @@ namespace Loggin
         private void paquetesToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FrmBuscarPaquete paquete = new FrmBuscarPaquete();
-            paquete.Show();
+            paquete.FormBorderStyle = FormBorderStyle.None;
+            AbrirFormuEnPanelMenu(paquete);
         }
 
         private void reservasToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -214,9 +213,17 @@ namespace Loggin
 
         }
 
+<<<<<<< HEAD
         private void ingresarEditarPasajeroToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+=======
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+
+>>>>>>> 99cambios
         }
     }
 }

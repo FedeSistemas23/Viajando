@@ -3,13 +3,6 @@ using CapaServicios;
 using CapaSesion;
 
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace interfazPpal
@@ -17,14 +10,14 @@ namespace interfazPpal
     public partial class Usuario : Form
     {
         //EnviarMail CV_enviarmail = new EnviarMail();
-        
-      
+
+
         public Usuario()
         {
             InitializeComponent();
         }
 
-        
+
 
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
@@ -77,7 +70,7 @@ namespace interfazPpal
                 string concatenacion = txtNombreUsuario.Text + aleatorio;
                 string hasheo2 = Seguridad.SHA256(concatenacion);
                 Usuario.ALtaUsuarioL(txtNombre.Text, txtApellido.Text, txtNombreUsuario.Text, txtEmailAlta.Text, aleatorio);
-                
+
                 //CV_enviarmail.SendMail(aleatorio,txtEmailAlta.Text,null,null);
 
                 //bool resultado = Usuario.ValidarUsuarioL(txtNombreUsuario.Text);
@@ -90,8 +83,8 @@ namespace interfazPpal
                 {
                     lblLeyenda.Text = "El nombre de Usuario ya existe";
                 }*/
-            }            
-            
+            }
+
         }
 
 
