@@ -1,4 +1,5 @@
 ﻿using System;
+<<<<<<< HEAD
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,6 +11,14 @@ using System.Threading.Tasks;
 namespace CapaDatos
 {
     public class CD_IntentosFallidos: Conexion
+=======
+using System.Data;
+using System.Data.SqlClient;
+
+namespace CapaDatos
+{
+    public class CD_IntentosFallidos : Conexion
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     {
         Conexion conexion = new Conexion();
         SqlCommand cmd = new SqlCommand();
@@ -31,15 +40,27 @@ namespace CapaDatos
                 conexion.CerrarConexion();
 
                 return true;
+<<<<<<< HEAD
             } catch (Exception ex) 
+=======
+            }
+            catch (Exception ex)
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             {
                 Console.WriteLine("Error CD_IntentosFallidos lina 36 : Error al ejecutar procedimiento almacenado por : " + ex.ToString());
                 return false;
             }
+<<<<<<< HEAD
             finally 
             {
                      conexion.CerrarConexion();
                      cmd.Dispose();
+=======
+            finally
+            {
+                conexion.CerrarConexion();
+                cmd.Dispose();
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             }
 
 

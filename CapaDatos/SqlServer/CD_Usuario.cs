@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaDatos;
+﻿using CapaSesion;
+using System;
 using System.Data;
 using System.Data.SqlClient;
-using CapaSesion;
-using System.Linq.Expressions;
-using System.Runtime.Remoting.Messaging;
-using System.Runtime.CompilerServices;
-using System.Diagnostics.Eventing.Reader;
-using System.Collections.Specialized;
 
 namespace CapaDatos
-    //
+//
 {
     public class CD_Usuario : Conexion
     {
@@ -29,19 +19,19 @@ namespace CapaDatos
             //cmd.CommandText = "ValidarUsuario";
             cmd.CommandText = "InicioSesion";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@Username", username); 
-            cmd.Parameters.AddWithValue("@Password", password);           
-            SqlDataReader leer = cmd.ExecuteReader();                        
+            cmd.Parameters.AddWithValue("@Username", username);
+            cmd.Parameters.AddWithValue("@Password", password);
+            SqlDataReader leer = cmd.ExecuteReader();
             try
             {
                 if (leer.Read())
-                {                                          
+                {
                     return true;
                 }
                 else
-                {          
-                    return false;                   
-                }    
+                {
+                    return false;
+                }
             }
             catch (Exception ex)
             {
@@ -50,37 +40,37 @@ namespace CapaDatos
             finally
             {
                 cmd.Parameters.Clear();
-                leer.Close();                                 
+                leer.Close();
                 conexion.CerrarConexion();
-            }            
+            }
         }
 
-        public void GuardarFechaPrimerIngreso( int id_usuario)
-        {            
+        public void GuardarFechaPrimerIngreso(int id_usuario)
+        {
             cmd.Connection = conexion.AbrirConexion();
             cmd.CommandText = "RegistrarPrimerIngreso";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@FechaPrimerIngreso", CS_Usuario.fechaPrimerIngreso);        
-            cmd.Parameters.AddWithValue("@Id_Usuario", id_usuario);            
+            cmd.Parameters.AddWithValue("@FechaPrimerIngreso", CS_Usuario.fechaPrimerIngreso);
+            cmd.Parameters.AddWithValue("@Id_Usuario", id_usuario);
             try
-            {                  
-                    cmd.ExecuteNonQuery();
+            {
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
                 throw new Exception("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
             }
             finally
-            {                
+            {
                 cmd.Parameters.Clear();
                 conexion.CerrarConexion();
             }
         }
 
 
-    
+
         public void VerificarIngresos(string username, string password)
-        {            
+        {
             cmd.Connection = conexion.AbrirConexion();
             cmd.CommandText = "ValidarIngreso";
             cmd.CommandType = CommandType.StoredProcedure;
@@ -91,9 +81,13 @@ namespace CapaDatos
             {
                 if (leer.HasRows)
                 {
+<<<<<<< HEAD
                     while (leer.Read()) 
+=======
+                    while (leer.Read())
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
                     {
-                       
+
                         CS_Usuario.intentos = leer.GetInt32(leer.GetOrdinal("IntentosFallidos"));
                         CS_Usuario.bloqueadoHasta = leer.GetDateTime(leer.GetOrdinal("BloqueadoHasta"));
                         //CS_Usuario.FechaPrimerIngreso = leer.GetDateTime(leer.GetOrdinal("FechaPrimerIngreso"));
@@ -109,14 +103,15 @@ namespace CapaDatos
                 leer.Close();
                 conexion.CerrarConexion();
             }
-        }  
-                
+        }
+
         public void ResetearIntentosFallidos(int id_usuario)
-        {           
+        {
             try
-            {   conexion.AbrirConexion();
-                cmd.CommandText="ResetearIntentosFallidos";
-                cmd.CommandType= CommandType.Text;
+            {
+                conexion.AbrirConexion();
+                cmd.CommandText = "ResetearIntentosFallidos";
+                cmd.CommandType = CommandType.Text;
                 cmd.Parameters.AddWithValue("@Id_Usuario", id_usuario);
                 cmd.ExecuteNonQuery();
             }
@@ -128,11 +123,12 @@ namespace CapaDatos
             {
                 conexion.CerrarConexion();
             }
-            
+
         }
 
         public void RegistrarIntentoFallido(string Username)
         {
+<<<<<<< HEAD
             
             try
             {
@@ -161,28 +157,68 @@ namespace CapaDatos
                         DateTime bloqueadoHasta = DateTime.Now.AddHours(24);
                         cmd = new SqlCommand("UPDATE Usuarios SET IntentosFallidos = @IntentosFallidos, BloqueadoHasta = @BloqueadoHasta WHERE Id_USuario= @UsuarioID");
                         cmd.Parameters.AddWithValue("@BloqueadoHasta", bloqueadoHasta);
+=======
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
-                    }
-                    else
-                    {
-                        cmd = new SqlCommand("UPDATE Usuarios SET IntentosFallidos = @IntentosFallidos WHERE UsuarioID = @UsuarioID");
+            try
+            {
+                cmd.Connection = conexion.AbrirConexion();
+                cmd.CommandText = "RegistraItentosFallidos";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue(@Username, Username);
+                cmd.ExecuteNonQuery();
+                conexion.CerrarConexion();
 
-                    }
-                }
-                catch (Exception ex)
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
+            }
+            /*try
+            {
+                intentosFallidos++;
+            Console.WriteLine("Mensaje CD_USuario L-160 Registrar intento fallido: Funciona correctamente");
+            if (intentosFallidos >= 3)
                 {
-                    throw new Exception("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
+                    DateTime bloqueadoHasta = DateTime.Now.AddHours(24);
+                    cmd = new SqlCommand("UPDATE Usuarios SET IntentosFallidos = @IntentosFallidos, BloqueadoHasta = @BloqueadoHasta WHERE Id_USuario= @UsuarioID");
+                    cmd.Parameters.AddWithValue("@BloqueadoHasta", bloqueadoHasta);
+
                 }
-                finally
+                else
                 {
+<<<<<<< HEAD
                     conexion.CerrarConexion();
              
             }              
                 cmd.Parameters.AddWithValue("@IntentosFallidos", intentosFallidos);
                 cmd.Parameters.AddWithValue("@UsuarioID", id_Usuario);
          */       cmd.ExecuteNonQuery();            
+=======
+                    cmd = new SqlCommand("UPDATE Usuarios SET IntentosFallidos = @IntentosFallidos WHERE UsuarioID = @UsuarioID");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
+            }
+            finally
+            {
+                conexion.CerrarConexion();
+
+        }              
+            cmd.Parameters.AddWithValue("@IntentosFallidos", intentosFallidos);
+            cmd.Parameters.AddWithValue("@UsuarioID", id_Usuario);
+     */
+            cmd.ExecuteNonQuery();
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
         }
-        
+
 
         public bool ValidarMail(string correo)
         {
@@ -247,15 +283,15 @@ namespace CapaDatos
 
         // el "admin" ingresa su uswuario y contraseña en el formulario,se invoca el hasheo, se invoca el editar password y entonces el usuario y el pass el userpass. ahora el unico
         // problema 
-        
+
 
         public string[] PreguntasUser(int idUsuario)
         {
-           
+
             cmd.Connection = conexion.AbrirConexion();
             cmd.CommandText = "TraerPreguntas";
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue ("@idUsuario", idUsuario);
+            cmd.Parameters.AddWithValue("@idUsuario", idUsuario);
             SqlDataReader leer = cmd.ExecuteReader();
             string[] preguntasUser = new string[3];
             //int[] id_preguntas = new int[3];
@@ -269,18 +305,18 @@ namespace CapaDatos
                         if (contador == 1)
                         {
                             preguntasUser[0] = leer["Pregunta"].ToString();
-                           // id_preguntas[0] = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
+                            // id_preguntas[0] = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
 
                         }
                         else if (contador == 2)
                         {
                             preguntasUser[1] = leer["Pregunta"].ToString();
-                          // id_preguntas[1] = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
+                            // id_preguntas[1] = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
                         }
                         else if (contador == 3)
                         {
                             preguntasUser[2] = leer["Pregunta"].ToString();
-                           // id_preguntas[2] = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
+                            // id_preguntas[2] = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
                         }
                         contador++;
                     }
@@ -305,7 +341,7 @@ namespace CapaDatos
             SqlDataReader leer = cmd.ExecuteReader();
             string[] preguntasAleatorias = new string[3];
             //int[] id_preguntas = new int[3];
-           // List<Respuestas> listarespuesta = new List<Respuestas>();
+            // List<Respuestas> listarespuesta = new List<Respuestas>();
             try
             {
                 if (leer.HasRows)
@@ -316,21 +352,21 @@ namespace CapaDatos
                         if (contador == 1)
                         {
                             preguntasAleatorias[0] = leer["Pregunta"].ToString();
-                            CS_GuardaPreguntasRespuestas.id_preg1= leer.GetInt32(leer.GetOrdinal("Id_Preg")) ;
-                            
+                            CS_GuardaPreguntasRespuestas.id_preg1 = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
+
                         }
                         else if (contador == 2)
                         {
                             preguntasAleatorias[1] = leer["Pregunta"].ToString();
-                            CS_GuardaPreguntasRespuestas.id_preg2= leer.GetInt32(leer.GetOrdinal("Id_Preg"));
+                            CS_GuardaPreguntasRespuestas.id_preg2 = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
                         }
                         else if (contador == 3)
                         {
                             preguntasAleatorias[2] = leer["Pregunta"].ToString();
-                            CS_GuardaPreguntasRespuestas.id_preg3= leer.GetInt32(leer.GetOrdinal("Id_Preg"));
+                            CS_GuardaPreguntasRespuestas.id_preg3 = leer.GetInt32(leer.GetOrdinal("Id_Preg"));
                         }
                         contador++;
-                    }                                        
+                    }
                 }
                 return preguntasAleatorias;
             }
@@ -347,7 +383,7 @@ namespace CapaDatos
 
 
 
-        
+
 
         public void AltaUsuario(string nombre, string apellido, string usuario, string email, string password)
         {
@@ -379,10 +415,10 @@ namespace CapaDatos
                 conexion.CerrarConexion();
             }
         }
-        
+
     }
 
-}     
-    
-       
+}
+
+
 

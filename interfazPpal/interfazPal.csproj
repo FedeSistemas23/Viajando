@@ -64,11 +64,19 @@
     <Compile Include="CambioContrasenia.Designer.cs">
       <DependentUpon>CambioContrasenia.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="CargaPasajeros.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="CargaPasajeros.Designer.cs">
       <DependentUpon>CargaPasajeros.cs</DependentUpon>
+=======
+    <Compile Include="FrmCargaPasajeros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCargaPasajeros.Designer.cs">
+      <DependentUpon>FrmCargaPasajeros.cs</DependentUpon>
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     </Compile>
     <Compile Include="CrearReserva.cs">
       <SubType>Form</SubType>
@@ -76,6 +84,7 @@
     <Compile Include="CrearReserva.Designer.cs">
       <DependentUpon>CrearReserva.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="FrmIngresarEditarPaquetes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +96,13 @@
     </Compile>
     <Compile Include="FrmIngresarEditarPasajero.Designer.cs">
       <DependentUpon>FrmIngresarEditarPasajero.cs</DependentUpon>
+=======
+    <Compile Include="FrmIngresarEditarPaquete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresarEditarPaquete.Designer.cs">
+      <DependentUpon>FrmIngresarEditarPaquete.cs</DependentUpon>
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     </Compile>
     <Compile Include="FrmIngresarEditarReseerva.cs">
       <SubType>Form</SubType>
@@ -213,17 +229,27 @@
     <EmbeddedResource Include="CambioContrasenia.resx">
       <DependentUpon>CambioContrasenia.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="CargaPasajeros.resx">
       <DependentUpon>CargaPasajeros.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmCargaPasajeros.resx">
+      <DependentUpon>FrmCargaPasajeros.cs</DependentUpon>
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     </EmbeddedResource>
     <EmbeddedResource Include="CrearReserva.resx">
       <DependentUpon>CrearReserva.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="FrmIngresarEditarPaquetes.resx">
       <DependentUpon>FrmIngresarEditarPaquetes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarPasajero.resx">
       <DependentUpon>FrmIngresarEditarPasajero.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="FrmIngresarEditarPaquete.resx">
+      <DependentUpon>FrmIngresarEditarPaquete.cs</DependentUpon>
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIngresarEditarReseerva.resx">
       <DependentUpon>FrmIngresarEditarReseerva.cs</DependentUpon>

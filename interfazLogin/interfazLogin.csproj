@@ -159,9 +159,9 @@
       <Project>{e92b32cb-b1a4-43ad-b822-a31029907231}</Project>
       <Name>CapaSesion</Name>
     </ProjectReference>
-    <ProjectReference Include="..\interfazPpal\interfazPpal.csproj">
+    <ProjectReference Include="..\interfazPpal\interfazPal.csproj">
       <Project>{ef3eabf5-db0c-4abb-a404-09f4d4746500}</Project>
-      <Name>interfazPpal</Name>
+      <Name>interfazPal</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

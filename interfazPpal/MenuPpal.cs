@@ -1,7 +1,10 @@
 ﻿using interfazPpal;
 using System;
 using System.Windows.Forms;
+<<<<<<< HEAD
 using Loggin;
+=======
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
 namespace Loggin
 {
@@ -42,9 +45,15 @@ namespace Loggin
         }
         private void altaUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Alta_de_Usuarios form= new Alta_de_Usuarios();
            // form.Show();
            AbrirFormuEnPanelMenu(form);
+=======
+            Alta_de_Usuarios form = new Alta_de_Usuarios();
+            // form.Show();
+            AbrirFormuEnPanelMenu(form);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
             //Alta_de_Usuarios frm = new Alta_de_Usuarios();
             //nuContenedor.Show();
@@ -52,7 +61,11 @@ namespace Loggin
 
         private void preguntasSeguridadToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
 
         }
@@ -72,11 +85,20 @@ namespace Loggin
         {
             BuscarReserva frm = new BuscarReserva();
             AbrirFormuEnPanelMenu(frm);
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
         }
 
         private void crearNuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmIngresarEditarPaquetes frm = new FrmIngresarEditarPaquetes();
+=======
+            FrmIngresarEditarPaquete frm = new FrmIngresarEditarPaquete();
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             AbrirFormuEnPanelMenu(frm);
         }
 
@@ -103,7 +125,11 @@ namespace Loggin
 
         private void ingresarEditarPagoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1,1);
+=======
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1, 1);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             pagoRecibidos.Show();
         }
 
@@ -132,7 +158,11 @@ namespace Loggin
 
         private void pagosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1,1);
+=======
+            FrmPagoRecibidos pagoRecibidos = new FrmPagoRecibidos(1, 1);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             pagoRecibidos.Show();
         }
 
@@ -162,7 +192,11 @@ namespace Loggin
 
         private void busesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor(0,1);
+=======
+            FrmIngresarEditarProveedor proveedor = new FrmIngresarEditarProveedor(0, 1);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             proveedor.Show();
         }
 
@@ -212,11 +246,25 @@ namespace Loggin
 
         }
 
+<<<<<<< HEAD
         private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
             Application.Exit();
 
+=======
+<<<<<<< HEAD
+        private void ingresarEditarPasajeroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+=======
+        private void cerrarSesiónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
+
+>>>>>>> 99cambios
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
         }
     }
 }

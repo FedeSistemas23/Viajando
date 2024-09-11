@@ -1,9 +1,4 @@
 ﻿using CapaDatos;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CapaNegocio
 {
@@ -14,12 +9,12 @@ namespace CapaNegocio
         {
             bool existe = validarusuario.ValidarUsuarioD(username);
             if (existe)
-            { 
+            {
                 return true;
             }
-            else 
-            { 
-                return false; 
+            else
+            {
+                return false;
             }
         }
     }

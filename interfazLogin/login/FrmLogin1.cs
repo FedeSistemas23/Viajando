@@ -1,32 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Drawing.Text;
-using System.Runtime.InteropServices;
-using CapaNegocio;
+﻿using CapaNegocio;
 using CapaServicios;
+using CapaSesion;
 using interfazLogin.Presentacion;
 using interfazPpal;
-using CapaSesion;
-using System.Diagnostics.Eventing.Reader;
-using interfazLogin;
+using Loggin;
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace interfazLogin
 {
     public partial class FrmLogin1 : Form
     {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();        
 =======
         MenuPpal menu1 = new MenuPpal();
         CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();
 >>>>>>> Stashed changes
+=======
+        MenuPpal menu1 = new MenuPpal();
+        CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
         CN_ValidarUsuario validarusuario = new CN_ValidarUsuario();
         CN_UsuarioEnSesion usuario = new CN_UsuarioEnSesion();
         public FrmLogin1()
@@ -102,8 +99,7 @@ namespace interfazLogin
          Validar que las letras sean minusculas
         // no esta discriminando de mayusculas y minusculas         
          */
-        interfazPpal.MenuPrincipal menu = new interfazPpal.MenuPrincipal();
-
+        interfazPpal.Menu menu = new interfazPpal.Menu();
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             FrmPreguntasSeguridad frm1 = new FrmPreguntasSeguridad();
@@ -115,6 +111,7 @@ namespace interfazLogin
             string password = txtPass.Text;
             string userpass = username + password;
             string hasheo2 = Seguridad.SHA256(userpass);
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             MenuPrincipal menu = new MenuPrincipal();
 =======
@@ -126,6 +123,11 @@ namespace interfazLogin
             Console.WriteLine("Contraseña de  " + username + " " + hasheo2);
 
 >>>>>>> Stashed changes
+=======
+            int digito = CreaDigitoVerificador.Calcular(hasheo2);
+            btnIngresar.Enabled = true; ;
+
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             if (txtUsuario.Text != "Ej.: ejemplo@gmail.com")
             {
                 if (txtPass.Text != "Contraseña")
@@ -136,6 +138,7 @@ namespace interfazLogin
                    
                     if (userexist)
                     {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
                         if (hasheo2 == CS_Usuario.password)
 =======
@@ -151,6 +154,17 @@ namespace interfazLogin
                                 if (dias < 10)
                                 {
                                     DialogResult resultado = MessageBox.Show("Su contraseña esta por vencer en " + " " +dias +" "+ "dias. " + " " + "Desea cambiarla ahora?", "Contraseña por Vencer", MessageBoxButtons.OKCancel);
+=======
+                        if (hasheo2 == CS_Usuario.password)/* digito== CS_usuario.digito*/
+                        {
+                            if (CS_Usuario.intentos < 3)
+                            {
+
+                                int dias = CS_VencimientoPassword.CalcularDiasRestantes(CS_Usuario.fechaUltimoCambio, CS_Usuario.venceCada);
+                                if (dias < 10)
+                                {
+                                    DialogResult resultado = MessageBox.Show("Su contraseña esta por vencer en " + " " + dias + " " + "dias. " + " " + "Desea cambiarla ahora?", "Contraseña por Vencer", MessageBoxButtons.OKCancel);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
                                     if (resultado == DialogResult.OK)
                                     {
@@ -172,6 +186,7 @@ namespace interfazLogin
                                     saludo.ShowDialog();
                                     menu1.Show();
                                 }
+<<<<<<< HEAD
                                 Console.WriteLine("Mensaje de FormLogin Linea 136 : La cantidad de intentos fallidos es menor a 3");
                                 Console.WriteLine();
                                 Console.WriteLine("Mensaje de FormLogin Linea 138 : fecha de primer ingreso =  " + CS_Usuario.fechaPrimerIngreso);
@@ -179,17 +194,26 @@ namespace interfazLogin
                             }
 <<<<<<< Updated upstream
                             else //if (hasheo2 == password)                                                                      
+=======
+                                ;
+
+                            }
+                            else
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
                             {
-                                this.Hide();
-                                bienvenida saludo = new bienvenida();
-                                saludo.ShowDialog();
-                                menu.Show();
+                                //btnIngresar.Enabled = false;
+                                MessageBox.Show("Usuario Bloqueado \n Comuniquese con el administrador");
+                                txtPass.Clear();
+                                txtUsuario.Clear();
                             }
                         }
-                        //else if (frm1.aleatorio == txtPass.Text)
+                        else
                         {
-                            MessageBox.Show("La contraseña es incorrecta. Ingrese de nuevo la contraseña:");
+                            MessageBox.Show("La contraseña es incorrecta. Intente de nuevo:");
+                            intentosFallidos.registraIntentofallido(txtUsuario.Text);
+                            MessageBox.Show("Intentos fallidos:  " + intentosFallidos);
                             txtPass.Focus();
+<<<<<<< HEAD
                             int intentos = CS_Usuario.intentos++;
                             CS_Usuario.intentos = intentos;
                             if (CS_Usuario.intentos == 3)
@@ -213,6 +237,8 @@ namespace interfazLogin
                             MessageBox.Show("Intentos fallidos:  " + intentosFallidos);
                             txtPass.Focus();
 >>>>>>> Stashed changes
+=======
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
                         }
                     }
                     else
@@ -232,6 +258,13 @@ namespace interfazLogin
                 MessageBox.Show("debe ingresar un Usuario");
                 txtUsuario.Focus();
             }
+<<<<<<< HEAD
+=======
+
+
+
+        }
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
           
         

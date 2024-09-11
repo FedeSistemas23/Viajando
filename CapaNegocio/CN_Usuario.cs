@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaDatos;
-using CapaServicios;
-using System.Data;
-using CapaSesion;
-using System.Web;
+﻿using CapaDatos;
 
 
 namespace CapaNegocio
@@ -20,8 +10,8 @@ namespace CapaNegocio
         public bool Login(string username, string password)
         {
             bool existe = cdUsuario.Login(username, password);
-            if (existe) 
-            {    
+            if (existe)
+            {
                 return true;
             }
             else
@@ -41,21 +31,21 @@ namespace CapaNegocio
             return cdUsuario.ValidarMail(correo);
         }
 
-    //- Funcion para recuperar la contraseña, llama a recuperarPasword() de CD_Usuario, pasando como argumento el email
+        //- Funcion para recuperar la contraseña, llama a recuperarPasword() de CD_Usuario, pasando como argumento el email
         public string recoverPassword(string correo, string aleatorio)
         {
-            string mensaje; 
+            string mensaje;
             mensaje = cdUsuario.recuperoPassword(correo, aleatorio);
             return mensaje;
         }
-        
 
-        
+
+
         public void ALtaUsuarioL(string nombre, string apellido, string usuario, string email, string password)
         {
             cdUsuario.AltaUsuario(nombre, apellido, usuario, email, password);
         }
 
-        
+
     }
 }

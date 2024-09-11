@@ -1,18 +1,14 @@
 ﻿using CapaSesion;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace CapaDatos
 {
     public class CD_ValidarPassword : Conexion
     {
-        SqlCommand cmd=new SqlCommand();
-        Conexion conexion= new Conexion();
+        SqlCommand cmd = new SqlCommand();
+        Conexion conexion = new Conexion();
         public bool ValidarContraseña(string password)
         {
             // Acá debo poner la consulta sql del store procedure

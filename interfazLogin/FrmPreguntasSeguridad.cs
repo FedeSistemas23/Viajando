@@ -3,13 +3,6 @@ using CapaServicios;
 using CapaSesion;
 using interfazPpal;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace interfazLogin
@@ -55,7 +48,7 @@ namespace interfazLogin
                 lblContestePreguntas.Visible = true;
                 txtRespuesta1.Visible = true; txtRespuesta2.Visible = true; txtRespuesta3.Visible = true;
                 btnEnviarRtas.Visible = true;
-                btnEnviarRtas.Enabled = true;               
+                btnEnviarRtas.Enabled = true;
             }
         }
 
@@ -75,6 +68,7 @@ namespace interfazLogin
             {
 
                 string aleatorio = Aleatorios.Armar();
+                CS_Usuario.password = aleatorio;
                 ArmarMail.Preparar(CS_Usuario.Username, CS_Usuario.email, aleatorio);
                 string concatenacion = CS_Usuario.Username + aleatorio;
                 string hasheo2 = Seguridad.SHA256(concatenacion);

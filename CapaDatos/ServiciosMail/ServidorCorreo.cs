@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Net;
 using System.Net.Mail;
 
@@ -11,9 +7,9 @@ namespace CapaDatos.Servicios_Mail
     public class ServidorCorreo
     {
         private SmtpClient smptClient;
-        protected string senderMail {  get; set; }
-        protected string password { get; set; } 
-        protected string host { get; set; } 
+        protected string senderMail { get; set; }
+        protected string password { get; set; }
+        protected string host { get; set; }
         protected int port { get; set; }
         protected bool ssl { get; set; }
 
@@ -28,7 +24,7 @@ namespace CapaDatos.Servicios_Mail
 
         }
 
-        public void sendMail (string subject, string body, string recipientMail)
+        public void sendMail(string subject, string body, string recipientMail)
         {
             var mensajeMail = new MailMessage();
             try

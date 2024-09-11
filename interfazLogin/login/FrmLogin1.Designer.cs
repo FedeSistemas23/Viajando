@@ -119,12 +119,16 @@
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             this.btnIngresar.Location = new System.Drawing.Point(411, 330);
             this.btnIngresar.Margin = new System.Windows.Forms.Padding(4);
 =======
             this.btnIngresar.Location = new System.Drawing.Point(308, 264);
 >>>>>>> Stashed changes
+=======
+            this.btnIngresar.Location = new System.Drawing.Point(308, 264);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(409, 40);
             this.btnIngresar.TabIndex = 3;
@@ -141,6 +145,7 @@
             this.lnkOlvidar.LinkColor = System.Drawing.Color.DimGray;
             this.lnkOlvidar.Location = new System.Drawing.Point(565, 327);
             this.lnkOlvidar.Name = "lnkOlvidar";
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             this.lnkOlvidar.Size = new System.Drawing.Size(199, 21);
             this.lnkOlvidar.TabIndex = 0;
@@ -148,6 +153,10 @@
             this.lnkOlvidar.Size = new System.Drawing.Size(155, 17);
             this.lnkOlvidar.TabIndex = 4;
 >>>>>>> Stashed changes
+=======
+            this.lnkOlvidar.Size = new System.Drawing.Size(155, 17);
+            this.lnkOlvidar.TabIndex = 4;
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             this.lnkOlvidar.TabStop = true;
             this.lnkOlvidar.Text = "Olvide mi contraseña?";
             this.lnkOlvidar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkOlvidar_LinkClicked_1);
@@ -211,12 +220,17 @@
             // 
             // FrmLogin1
             // 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
 =======
             this.AcceptButton = this.btnIngresar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 >>>>>>> Stashed changes
+=======
+            this.AcceptButton = this.btnIngresar;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(15)))), ((int)(((byte)(15)))));
             this.ClientSize = new System.Drawing.Size(780, 390);

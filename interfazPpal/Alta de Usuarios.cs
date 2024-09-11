@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 namespace Loggin
 {
     public  partial class Alta_de_Usuarios : Form
+=======
+﻿using CapaNegocio;
+using CapaServicios;
+using CapaSesion;
+using System;
+using System.Data;
+using System.Windows.Forms;
+
+namespace Loggin
+{
+    public partial class Alta_de_Usuarios : Form
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     {
         CN_Alta_Usuario AltaUsuario = new CN_Alta_Usuario();
         public Alta_de_Usuarios()
@@ -38,6 +51,7 @@ namespace Loggin
         {
 
             string pass = Aleatorios.Armar();
+<<<<<<< HEAD
             Console.WriteLine( pass);
             string concatenados = pass + txtNombreUsuario.Text;
             string hasheo = Seguridad.SHA256(concatenados);
@@ -70,16 +84,59 @@ namespace Loggin
                 VencenPermisos = Convert.ToInt32(npdVencePermisos.Value),
             };
                  //AltaUsuario.AñadirAtributos(NuevoUsuario);
+=======
+            Console.WriteLine(pass);
+            string concatenados = pass + txtNombreUsuario.Text;
+            string hasheo = Seguridad.SHA256(concatenados);
+
+            AtributosUsuario NuevoUsuario = new AtributosUsuario()
+
+            {
+                Username = txtNombreUsuario.Text,
+                password = pass,
+                Nombre = txtNombre.Text,
+                // Id_flia = Convert.ToInt32(cmbFamilias.SelectedItem.ToString()),
+                Apellidos = txtApellido.Text,
+                Email = txtEmail.Text,
+                VenceCada = (int)npdVenceCada.Value,
+                TipoDocumento = txtTipoDoc.SelectedItem.ToString(),
+                NumDocumento = Convert.ToInt32(txtNumDoc.Text),
+                Telefono = Convert.ToInt32(txtTelefono.Text),
+                Celular = Convert.ToInt32(txtCelular.Text),
+                Calle = txtCalle.Text,
+                NumCalle = Convert.ToInt32(txtNumCalle.Text),
+                Localidad = txtLocalidad.Text,
+
+                digito = CreaDigitoVerificador.Calcular(hasheo),
+
+                familia = cmbFamilias.SelectedItem.ToString(),
+                intentos = Convert.ToInt32(npdIntentos.Value), // Usar Value para obtener el valor numérico de NumericUpDown.
+                UsuarioTemporal = ckbUsuarioTemporal.Checked,
+                //VenceCada = Convert.ToInt32(npdVenceCada.Value),
+                //intentos = int.Parse(npdIntentos.ToString()),
+                Bloqueado = chbBloqueado.Checked,
+            };
+            //AltaUsuario.AñadirAtributos(NuevoUsuario);
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
             DataTable DT = new DataTable();
             dataGrid.DataSource = null;
             DT = AltaUsuario.AñadirAtributos(NuevoUsuario);
             dataGrid.DataSource = DT;
+<<<<<<< HEAD
            
                 
 
            //if (resultado) MessageBox.Show( "Usuario " + NuevoUsuario.Username +  "" + " ingresado correctamente");
         }
     
+=======
+
+
+
+            //if (resultado) MessageBox.Show( "Usuario " + NuevoUsuario.Username +  "" + " ingresado correctamente");
+        }
+
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
         private void groupBox2_Enter(object sender, EventArgs e)
         {
@@ -95,6 +152,7 @@ namespace Loggin
         {
 
         }
+<<<<<<< HEAD
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
@@ -105,5 +163,7 @@ namespace Loggin
         {
 
         }
+=======
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     }
 }

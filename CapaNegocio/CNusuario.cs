@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,12 @@ using System.Threading.Tasks;
 namespace CapaNegocio
 {
    public class CNusuario
+=======
+﻿//ordenar los atributos entre los datos de usuario y persona
+namespace CapaNegocio
+{
+    public class CNusuario
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
     {
         public static string Username { get; set; }
         public static string nombre { get; set; }
@@ -27,6 +34,7 @@ namespace CapaNegocio
         public string Barrio { get; set; } //tenemos barrio en la base de datos?
         public string Localidad { get; set; }
 
+<<<<<<< HEAD
         
 
         public  string password { get; set; } // se genera con el Aleatorio en Servicios
@@ -38,6 +46,19 @@ namespace CapaNegocio
         public bool Bloqueado { get; set; }
 
         
+=======
+
+
+        public string password { get; set; } // se genera con el Aleatorio en Servicios
+        public int digito { get; set; }      // se genera con su metodo usando el aleatorio Todo esto en la capa
+        public int id_famiila { get; set; }
+        public string familia { get; set; }
+        public int intentos { get; set; }
+        public int venceCada { get; set; }
+        public bool Bloqueado { get; set; }
+
+
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
 
     }
 }

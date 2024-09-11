@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\Capa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{C07257EF-8CBB-4CE2-ACC2-41CE5E7C245D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfazPpal", "interfazPpal\interfazPpal.csproj", "{EF3EABF5-DB0C-4ABB-A404-09F4D4746500}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "interfazPal", "interfazPpal\interfazPal.csproj", "{EF3EABF5-DB0C-4ABB-A404-09F4D4746500}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaSesion", "CapaSesion\CapaSesion.csproj", "{E92B32CB-B1A4-43AD-B822-A31029907231}"
 EndProject

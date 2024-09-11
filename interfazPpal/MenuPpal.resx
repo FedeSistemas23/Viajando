@@ -126,9 +126,12 @@
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>338, 17</value>
   </metadata>
+<<<<<<< HEAD
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>338, 17</value>
   </metadata>
+=======
+>>>>>>> d8c6b8bcf5034cb5e6d38c90e56245adc0d5da0c
   <metadata name="contextMenuStrip2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>475, 17</value>
   </metadata>
