@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Net;
 using System.Net.Mail;
-using System.Data;
+using System.Text.RegularExpressions;
 
 
 namespace CapaServicios
@@ -59,10 +54,10 @@ namespace CapaServicios
                 return "Hola, su peticion para cambiar la contraseña se há generado. \n" + "Verifique su correo electrónico"; 
            
         }*/
-        
+
         public static void SystemSupportMail(string correo, string aleatorio)
-        {     
-            
+        {
+
             using (MailMessage mail = new MailMessage())
             {
                 mail.From = new MailAddress(correo);
@@ -74,7 +69,7 @@ namespace CapaServicios
                 using (SmtpClient smtp = new SmtpClient(correo))
                 {
                     smtp.Credentials = new NetworkCredential();
-                    
+
 
                     try
                     {
@@ -89,7 +84,7 @@ namespace CapaServicios
             }
         }
     }
-} 
+}
 
 
 

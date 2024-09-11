@@ -59,7 +59,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Location = new System.Drawing.Point(92, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -83,7 +83,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label2.Location = new System.Drawing.Point(99, 114);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -113,7 +113,7 @@
             // 
             this.lblContestePreguntas.AutoSize = true;
             this.lblContestePreguntas.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContestePreguntas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblContestePreguntas.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblContestePreguntas.Location = new System.Drawing.Point(83, 21);
             this.lblContestePreguntas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContestePreguntas.Name = "lblContestePreguntas";
@@ -125,7 +125,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.Location = new System.Drawing.Point(91, 318);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -135,7 +135,7 @@
             // 
             // btnEnviarRtas
             // 
-            this.btnEnviarRtas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnEnviarRtas.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnEnviarRtas.Enabled = false;
             this.btnEnviarRtas.FlatAppearance.BorderSize = 0;
             this.btnEnviarRtas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
@@ -156,7 +156,7 @@
             // 
             this.lblpregunta3.AutoSize = true;
             this.lblpregunta3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpregunta3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblpregunta3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblpregunta3.Location = new System.Drawing.Point(91, 214);
             this.lblpregunta3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblpregunta3.Name = "lblpregunta3";
@@ -180,7 +180,7 @@
             // 
             this.lblpregunta2.AutoSize = true;
             this.lblpregunta2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpregunta2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblpregunta2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblpregunta2.Location = new System.Drawing.Point(88, 144);
             this.lblpregunta2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblpregunta2.Name = "lblpregunta2";
@@ -204,7 +204,7 @@
             // 
             this.lblpregunta1.AutoSize = true;
             this.lblpregunta1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpregunta1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblpregunta1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblpregunta1.Location = new System.Drawing.Point(88, 70);
             this.lblpregunta1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblpregunta1.Name = "lblpregunta1";
@@ -226,7 +226,7 @@
             // 
             // btnEnviarUsuario
             // 
-            this.btnEnviarUsuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnEnviarUsuario.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnEnviarUsuario.FlatAppearance.BorderSize = 0;
             this.btnEnviarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnEnviarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -246,7 +246,7 @@
             // 
             this.lblNoexisteUsuario.AutoSize = true;
             this.lblNoexisteUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoexisteUsuario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblNoexisteUsuario.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblNoexisteUsuario.Location = new System.Drawing.Point(133, 287);
             this.lblNoexisteUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNoexisteUsuario.Name = "lblNoexisteUsuario";
@@ -310,7 +310,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(777, 837);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pictureBox2);

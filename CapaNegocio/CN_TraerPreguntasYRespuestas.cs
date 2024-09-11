@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CapaServicios;
-using CapaSesion;
-using CapaDatos;
+﻿using CapaDatos;
 
 namespace CapaNegocio
 {
@@ -14,7 +7,7 @@ namespace CapaNegocio
         CD_TraePreguntasYRespuestas preguntasYrespuestas = new CD_TraePreguntasYRespuestas();
         public void TraerPreguntas()
         {
-            preguntasYrespuestas.TraerPreguntasyRespuestas();            
+            preguntasYrespuestas.TraerPreguntasyRespuestas();
         }
     }
 }

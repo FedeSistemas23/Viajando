@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Data.SqlTypes;
 
 namespace CapaDatos
 {
@@ -27,24 +21,24 @@ namespace CapaDatos
         }
     }
 }
-    /*  private readonly string cadenaConexion = "Server =(local); DataBase = login; integrated security = true";
+/*  private readonly string cadenaConexion = "Server =(local); DataBase = login; integrated security = true";
 
-        public DataTable ConectarBD()
-        {
-            DataTable dt = new DataTable();
+    public DataTable ConectarBD()
+    {
+        DataTable dt = new DataTable();
 
-            using (SqlConnection conn = new SqlConnection(cadenaConexion))
-            { 
+        using (SqlConnection conn = new SqlConnection(cadenaConexion))
+        { 
 
-                conn.Open();
+            conn.Open();
 
-            }
+        }
 
-            return dt;
-        } 
+        return dt;
+    } 
 
 
-    }
+}
 }
 */
 

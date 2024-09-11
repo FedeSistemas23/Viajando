@@ -1,20 +1,15 @@
-﻿using CapaServicios;
+﻿using CapaSesion;
 using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
-using CapaSesion;
+using System.Data.SqlClient;
 
 namespace CapaDatos
 {
     public class CD_GuardaDigito : Conexion
     {
-        int idUsuario = CS_Usuario.Id_Usuario;        
+        int idUsuario = CS_Usuario.Id_Usuario;
         SqlCommand cmd = new SqlCommand();
-        Conexion conexion= new Conexion();
+        Conexion conexion = new Conexion();
 
         public void GuardarDigito(int digito)
         {
@@ -32,11 +27,11 @@ namespace CapaDatos
                 throw new Exception("Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
             }
             finally
-            {               
+            {
                 cmd.Parameters.Clear();
                 conexion.CerrarConexion();
             }
         }
     }
-    
+
 }

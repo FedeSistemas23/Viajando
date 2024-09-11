@@ -1,27 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Drawing.Text;
-using System.Runtime.InteropServices;
-using CapaNegocio;
+﻿using CapaNegocio;
 using CapaServicios;
+using CapaSesion;
 using interfazLogin.Presentacion;
 using interfazPpal;
-using CapaSesion;
-using System.Diagnostics.Eventing.Reader;
-using interfazLogin;
+using Loggin;
+using System;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace interfazLogin
 {
     public partial class FrmLogin1 : Form
     {
-        CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();        
+        MenuPpal menu1 = new MenuPpal();
+        CN_GuardaRespuestas guardaRespuestas = new CN_GuardaRespuestas();
         CN_ValidarUsuario validarusuario = new CN_ValidarUsuario();
         CN_Usuario usuario = new CN_Usuario();
         public FrmLogin1()
@@ -97,18 +90,21 @@ namespace interfazLogin
          Validar que las letras sean minusculas
         // no esta discriminando de mayusculas y minusculas         
          */
-        interfazPpal.MenuPrincipal menu = new interfazPpal.MenuPrincipal();
-
+        interfazPpal.Menu menu = new interfazPpal.Menu();
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             FrmPreguntasSeguridad frm1 = new FrmPreguntasSeguridad();
             FrmEditarPassword editar = new FrmEditarPassword();
             FrmPrimerIngreso frmPrimerIngreso = new FrmPrimerIngreso();
+            CN_registrarIntentosFallidos intentosFallidos = new CN_registrarIntentosFallidos();
+
             string username = txtUsuario.Text;
             string password = txtPass.Text;
             string userpass = username + password;
             string hasheo2 = Seguridad.SHA256(userpass);
-            MenuPrincipal menu = new MenuPrincipal();
+            int digito = CreaDigitoVerificador.Calcular(hasheo2);
+            btnIngresar.Enabled = true; ;
+
             if (txtUsuario.Text != "Ej.: ejemplo@gmail.com")
             {
                 if (txtPass.Text != "Contraseña")
@@ -116,31 +112,53 @@ namespace interfazLogin
                     bool userexist = validarusuario.ValidarUsuarioL(username);
                     if (userexist)
                     {
-                        if (hasheo2 == CS_Usuario.password)
+                        if (hasheo2 == CS_Usuario.password)/* digito== CS_usuario.digito*/
                         {
-                            if (CS_Usuario.fechaPrimerIngreso == DateTime.Now)
+                            if (CS_Usuario.intentos < 3)
                             {
-                                this.Hide();
-                                frmPrimerIngreso.Show();
+
+                                int dias = CS_VencimientoPassword.CalcularDiasRestantes(CS_Usuario.fechaUltimoCambio, CS_Usuario.venceCada);
+                                if (dias < 10)
+                                {
+                                    DialogResult resultado = MessageBox.Show("Su contraseña esta por vencer en " + " " + dias + " " + "dias. " + " " + "Desea cambiarla ahora?", "Contraseña por Vencer", MessageBoxButtons.OKCancel);
+
+                                    if (resultado == DialogResult.OK)
+                                    {
+
+                                        FrmPreguntasSeguridad frm = new FrmPreguntasSeguridad();
+                                        frm.ShowDialog();
+                                    }
+                                }
+                                if (CS_Usuario.fechaPrimerIngreso == DateTime.Now || CS_Usuario.fechaPrimerIngreso == null)
+                                {
+                                    frmPrimerIngreso.Show();
+                                    this.Hide();
+
+                                }
+                                else //if (hasheo2 == password)                                                                      
+                                {
+                                    this.Hide();
+                                    bienvenida saludo = new bienvenida();
+                                    saludo.ShowDialog();
+                                    menu1.Show();
+                                }
+                                ;
+
                             }
-                            else //if (hasheo2 == password)                                                                      
+                            else
                             {
-                                this.Hide();
-                                bienvenida saludo = new bienvenida();
-                                saludo.ShowDialog();
-                                menu.Show();
+                                //btnIngresar.Enabled = false;
+                                MessageBox.Show("Usuario Bloqueado \n Comuniquese con el administrador");
+                                txtPass.Clear();
+                                txtUsuario.Clear();
                             }
                         }
-                        //else if (frm1.aleatorio == txtPass.Text)
+                        else
                         {
-                            MessageBox.Show("La contraseña es incorrecta. Ingrese de nuevo la contraseña:");
+                            MessageBox.Show("La contraseña es incorrecta. Intente de nuevo:");
+                            intentosFallidos.registraIntentofallido(txtUsuario.Text);
+                            MessageBox.Show("Intentos fallidos:  " + intentosFallidos);
                             txtPass.Focus();
-                            int intentos = CS_Usuario.intentos++;
-                            CS_Usuario.intentos = intentos;
-                            if (CS_Usuario.intentos == 3)
-                            {
-                                MessageBox.Show("El usuario ha sido bloqueado");
-                            }
                         }
                     }
                     else
@@ -153,13 +171,16 @@ namespace interfazLogin
                 {
                     MessageBox.Show("Debe ingresae una contraseña");
                     txtPass.Focus();
-                } 
-            }            
+                }
+            }
             else
             {
                 MessageBox.Show("debe ingresar un Usuario");
                 txtUsuario.Focus();
-            }                       
+            }
+
+
+
         }
 
         private void txtPass_TextChanged_1(object sender, EventArgs e)
@@ -172,6 +193,11 @@ namespace interfazLogin
             FrmPreguntasSeguridad preguntas = new FrmPreguntasSeguridad();
             this.Hide();
             preguntas.Show();
+
+        }
+
+        private void FrmLogin1_Load(object sender, EventArgs e)
+        {
 
         }
     }
