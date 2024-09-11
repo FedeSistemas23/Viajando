@@ -71,7 +71,7 @@ namespace interfazPpal
             }
             else
             {
-                CN_Usuario Usuario = new CN_Usuario();
+                CN_UsuarioEnSesion Usuario = new CN_UsuarioEnSesion();
                 string aleatorio = Aleatorios.Armar();
                 ArmarMail.Preparar(txtNombreUsuario.Text, txtEmailAlta.Text, aleatorio);
                 string concatenacion = txtNombreUsuario.Text + aleatorio;

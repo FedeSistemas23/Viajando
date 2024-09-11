@@ -5,8 +5,8 @@ public class Class1
 	public Class1()
 	{
 
-        // - Requerimientos del login
-        /****
+		// - Requerimientos del login
+		/****
 		 * 
 		 * 
  * 1)El formulario de Login deberá enviar la contraseña encriptada en SHA256.
@@ -100,5 +100,10 @@ dará acceso a los diferentes formularios dependiendo de los niveles de acceso.
 		 * 
 		 *
 		 */
-    }
+
+/*
+		// vencimiento de cambio de password
+
+		// seleccion desde checkbox cantidad dias
+		//forLLogin captura el valor del textbox y se lo pasa a capaNegocio
 }

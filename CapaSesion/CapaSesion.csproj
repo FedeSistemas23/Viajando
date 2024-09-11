@@ -41,10 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CS_AtributosNuevoUsuario.cs" />
+    <Compile Include="CS_AtributosPassword.cs" />
+    <Compile Include="CS_Paquete.cs" />
     <Compile Include="CS_PregRespSeg.cs" />
     <Compile Include="CS_Usuario.cs" />
     <Compile Include="CS_GuardaPreguntasRespuestas.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="CS_UsuarioBloqueado.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

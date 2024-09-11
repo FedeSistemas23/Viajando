@@ -91,6 +91,7 @@ namespace interfazPpal
             string newpass = txtPass.Text;
             string concatenados = usuario + newpass;
             string jasheo = Seguridad.SHA256(concatenados);
+
             try
             {
                 if (hasheoaleatorio == pass)
@@ -101,8 +102,13 @@ namespace interfazPpal
                         {
                             cn_usuario.EditarPassword(jasheo, usuario);
                             lblError.Text = "La contraseña se ha cambiado con exito.";
+<<<<<<< Updated upstream
                             this.Dispose();
+=======
+>>>>>>> Stashed changes
                             log.ShowDialog();
+                            this.Dispose();
+                            
                         }
                         else
                         {

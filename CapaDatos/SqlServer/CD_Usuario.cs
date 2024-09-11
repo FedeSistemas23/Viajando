@@ -91,7 +91,7 @@ namespace CapaDatos
             {
                 if (leer.HasRows)
                 {
-                    while (leer.Read()) // Método para cargar el nombre, apellido y rol en pictureBox panellateral al iniciar sesion.
+                    while (leer.Read()) 
                     {
                        
                         CS_Usuario.intentos = leer.GetInt32(leer.GetOrdinal("IntentosFallidos"));
@@ -131,13 +131,32 @@ namespace CapaDatos
             
         }
 
-        public void RegistrarIntentoFallido(int id_Usuario, int intentosFallidos)
-        {           
-                cmd.Connection=conexion.AbrirConexion();
-                try
+        public void RegistrarIntentoFallido(string Username)
+        {
+            
+            try
+            {
+                cmd.Connection = conexion.AbrirConexion();
+                cmd.CommandText = "RegistraItentosFallidos";
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue(@Username, Username);
+                cmd.ExecuteNonQuery();
+                conexion.CerrarConexion();
+
+                
+                   
+
+            }
+            catch (Exception ex) 
+            {
+
+                Console.WriteLine( "Error al ejecutar SP o Conexion a la BD. \n \n" + ex.Message);
+            }
+                /*try
                 {
                     intentosFallidos++;
-                    if (intentosFallidos >= 3)
+                Console.WriteLine("Mensaje CD_USuario L-160 Registrar intento fallido: Funciona correctamente");
+                if (intentosFallidos >= 3)
                     {
                         DateTime bloqueadoHasta = DateTime.Now.AddHours(24);
                         cmd = new SqlCommand("UPDATE Usuarios SET IntentosFallidos = @IntentosFallidos, BloqueadoHasta = @BloqueadoHasta WHERE Id_USuario= @UsuarioID");
@@ -157,10 +176,11 @@ namespace CapaDatos
                 finally
                 {
                     conexion.CerrarConexion();
-                }              
+             
+            }              
                 cmd.Parameters.AddWithValue("@IntentosFallidos", intentosFallidos);
                 cmd.Parameters.AddWithValue("@UsuarioID", id_Usuario);
-                cmd.ExecuteNonQuery();            
+         */       cmd.ExecuteNonQuery();            
         }
         
 

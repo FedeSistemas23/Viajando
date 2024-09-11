@@ -45,7 +45,14 @@
   <ItemGroup>
     <Compile Include="Aleatorios.cs" />
     <Compile Include="ArmarMail.cs" />
+    <Compile Include="Contrasenia\MasterValidar.cs" />
+    <Compile Include="Contrasenia\Validar8.cs" />
+    <Compile Include="Contrasenia\ValidarDigito.cs" />
+    <Compile Include="Contrasenia\ValidarEspecial.cs" />
+    <Compile Include="Contrasenia\ValidarMayus.cs" />
+    <Compile Include="Contrasenia\ValidarMinus.cs" />
     <Compile Include="CreaDigitoVerificador.cs" />
+    <Compile Include="CS_VencimientoPassword.cs" />
     <Compile Include="EnviarMail.cs" />
     <Compile Include="Hasheo.cs" />
     <Compile Include="ValidarMail.cs" />

@@ -41,13 +41,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Alta usuario\AtributosUsuario.cs" />
+    <Compile Include="Alta usuario\CN_Alta_Usuario.cs" />
+    <Compile Include="CN_Paquete.cs" />
+>>>>>>> Stashed changes
     <Compile Include="CN_EditarPassword.cs" />
     <Compile Include="CN_EnviaDigitoVerificador.cs" />
     <Compile Include="CN_Mail.cs" />
     <Compile Include="CN_GuardaRespuestas.cs" />
     <Compile Include="CN_GuardarPrimerIngreso.cs" />
+    <Compile Include="CN_registrarIntentosFallidos.cs" />
     <Compile Include="CN_TraerPreguntasYRespuestas.cs" />
-    <Compile Include="CN_Usuario.cs" />
+    <Compile Include="CN_UsuarioEnSesion.cs" />
+    <Compile Include="CN_Usuarios_Sistema.cs" />
     <Compile Include="CN_ValidarUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +72,9 @@
       <Project>{e92b32cb-b1a4-43ad-b822-a31029907231}</Project>
       <Name>CapaSesion</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Alta usuario\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

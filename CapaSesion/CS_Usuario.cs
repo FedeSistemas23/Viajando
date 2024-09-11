@@ -15,6 +15,7 @@ namespace CapaSesion
         public static string password { get; set; }
         public static int digito { get; set; }
         public static string familia { get; set; }
+        public static int idRolasignado { get; set; }
         public static string email { get; set; }
         public static int intentos { get; set; }
         public static DateTime bloqueadoHasta { get; set; }
@@ -23,6 +24,9 @@ namespace CapaSesion
         public static int venceCada { get; set; }
 
         public static string nombre { get; set; }
+
+        public static bool Bloqueado { get; set; }
+        public static bool UsuarioTemporal { get; set; }   
        
     }
     

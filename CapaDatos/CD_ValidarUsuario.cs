@@ -32,7 +32,9 @@ namespace CapaDatos
                         CS_Usuario.Username = leer["Username"].ToString();
                         CS_Usuario.password = leer["Pass"].ToString();                                                
                         CS_Usuario.email = leer["Email"].ToString();
-                        if (leer.IsDBNull(leer.GetOrdinal("IntentosFallidos")))
+                        //CS_Usuario.intentos = leer.GetInt32(leer.GetOrdinal("IntentosFallidos"));
+                        /*if (leer.IsDBNull(leer.GetOrdinal("IntentosFallidos")))
+
                         {
                             CS_Usuario.intentos = 0;
                         }                        
@@ -43,7 +45,7 @@ namespace CapaDatos
                         {
                             CS_Usuario.fechaUltimoCambio= leer.GetDateTime(leer.GetOrdinal("FechaUltimoCambio"));
                         }
-                        //CS_Usuario.venceCada = leer.GetInt32(leer.GetOrdinal("VenceCada"));
+                        CS_Usuario.venceCada = leer.GetInt32(leer.GetOrdinal("VenceCada"));
                         /*if (leer.IsDBNull(leer.GetOrdinal("BLoqueadoHasta")))
                         {
                             CS_Usuario.bloqueadoHasta = DateTime.Now;

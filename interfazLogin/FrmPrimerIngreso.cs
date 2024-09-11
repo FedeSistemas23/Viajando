@@ -18,7 +18,7 @@ namespace interfazLogin
     public partial class FrmPrimerIngreso : Form
     {
         
-        CN_Usuario usuario = new CN_Usuario();
+        CN_UsuarioEnSesion usuario = new CN_UsuarioEnSesion();
         string[] preguntas;
         CN_GuardaRespuestas guardarrespuestas = new CN_GuardaRespuestas();
         CN_GuardarPrimerIngreso primerIngreso = new CN_GuardarPrimerIngreso();
